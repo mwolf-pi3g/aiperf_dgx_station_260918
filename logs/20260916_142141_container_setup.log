@@ -1,0 +1,267 @@
+====================================================
+       CONTAINER SETUP & VERIFICATION STARTING      
+====================================================
+[INFO] Config file: /root/llm_perf/conf/core_models.json
+[INFO] One-shot Model: vllm-radixark-qwen3-8-flash-next-nvfp4
+[INFO] Base Compose: /root/llm_perf/conf/base_compose.yaml
+[INFO] Log file:    /root/llm_perf/20260916_142141_container_setup.log
+[INFO] Loaded 1 configuration row(s).
+
+----------------------------------------------------
+[CLEANUP] Stopping existing running Docker containers...
+----------------------------------------------------
+[CLEANUP] Found 15 container(s) starting with "vllm-": vllm-radixark-qwen3-8-flash-next-nvfp4, vllm-unsloth-qwen3-8-27b-nvfp4, vllm-qwen-qwen3-8-27b-fp8, vllm-qwen-qwen3-8-27b, vllm-qwen-qwen3-6-35b-a3b, vllm-qwen-qwen3-6-27b, vllm-nvidia-qwen3-6-35b-a3b-nvfp4, vllm-nvidia-qwen3-6-27b-nvfp4, vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4, vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4, vllm-inferact-qwen3-8-27b-nvfp4, vllm-ibm-granite-granite-4-2-30b, vllm-google-gemma-4-e4b-it-qat-w4a16-ct, vllm-google-gemma-4-e4b-it, vllm-google-gemma-4-26b-a4b-it
+[CLEANUP] Stopping container "vllm-radixark-qwen3-8-flash-next-nvfp4"...
+[CLEANUP] Container "vllm-radixark-qwen3-8-flash-next-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-unsloth-qwen3-8-27b-nvfp4"...
+[CLEANUP] Container "vllm-unsloth-qwen3-8-27b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-qwen-qwen3-8-27b-fp8"...
+[CLEANUP] Container "vllm-qwen-qwen3-8-27b-fp8" stopped successfully.
+[CLEANUP] Stopping container "vllm-qwen-qwen3-8-27b"...
+[CLEANUP] Container "vllm-qwen-qwen3-8-27b" stopped successfully.
+[CLEANUP] Stopping container "vllm-qwen-qwen3-6-35b-a3b"...
+[CLEANUP] Container "vllm-qwen-qwen3-6-35b-a3b" stopped successfully.
+[CLEANUP] Stopping container "vllm-qwen-qwen3-6-27b"...
+[CLEANUP] Container "vllm-qwen-qwen3-6-27b" stopped successfully.
+[CLEANUP] Stopping container "vllm-nvidia-qwen3-6-35b-a3b-nvfp4"...
+[CLEANUP] Container "vllm-nvidia-qwen3-6-35b-a3b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-nvidia-qwen3-6-27b-nvfp4"...
+[CLEANUP] Container "vllm-nvidia-qwen3-6-27b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4"...
+[CLEANUP] Container "vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4"...
+[CLEANUP] Container "vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-inferact-qwen3-8-27b-nvfp4"...
+[CLEANUP] Container "vllm-inferact-qwen3-8-27b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-ibm-granite-granite-4-2-30b"...
+[CLEANUP] Container "vllm-ibm-granite-granite-4-2-30b" stopped successfully.
+[CLEANUP] Stopping container "vllm-google-gemma-4-e4b-it-qat-w4a16-ct"...
+[CLEANUP] Container "vllm-google-gemma-4-e4b-it-qat-w4a16-ct" stopped successfully.
+[CLEANUP] Stopping container "vllm-google-gemma-4-e4b-it"...
+[CLEANUP] Container "vllm-google-gemma-4-e4b-it" stopped successfully.
+[CLEANUP] Stopping container "vllm-google-gemma-4-26b-a4b-it"...
+[CLEANUP] Container "vllm-google-gemma-4-26b-a4b-it" stopped successfully.
+
+----------------------------------------------------
+[ROW 1/1] Target Model: RadixArk/Qwen3.8-Flash-Next-NVFP4
+[CONTAINER NAME]: vllm-radixark-qwen3-8-flash-next-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-radixark-qwen3-8-flash-next-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-radixark-qwen3-8-flash-next-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[FAILURE] Container "vllm-radixark-qwen3-8-flash-next-nvfp4" failed readiness check: Container "vllm-radixark-qwen3-8-flash-next-nvfp4" exited prematurely with status "exited".
+[FAIL] Model "RadixArk/Qwen3.8-Flash-Next-NVFP4" failed readiness after 157.56s.
+
+=== INTERLEAVED CONTAINER LOGS (vllm-radixark-qwen3-8-flash-next-nvfp4) ===
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 596, in load_weights
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     loaded = loader.load_weights(
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]              ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/reload/torchao_decorator.py", line 50, in patched_model_load_weights
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     return original_load_weights(self, weights, *args, **kwargs)
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 444, in load_weights
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     autoloaded_weights = set(self._load_module("", self.module, weights))
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     yield from self._load_module(
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     yield from self._load_module(
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     yield from self._load_module(
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   [Previous line repeated 1 more time]
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 359, in _load_module
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     loaded_params = module_load_weights(weights)
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/ple_layer.py", line 521, in load_weights
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     loaded.update(AutoWeightsLoader(self).load_weights(regular_weights))
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/reload/torchao_decorator.py", line 50, in patched_model_load_weights
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     return original_load_weights(self, weights, *args, **kwargs)
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 444, in load_weights
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     autoloaded_weights = set(self._load_module("", self.module, weights))
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     yield from self._load_module(
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 417, in _load_module
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374]     raise ValueError(msg)
+(EngineCore pid=405) ERROR 09-16 06:24:13 [core.py:1374] ValueError: There is no module or parameter named 'ngram_embedding.weight_scale' in Qwen4ExpNGramEmbedding. The available parameters belonging to ngram_embedding (PLEVocabParallelEmbedding) are: {'ngram_embedding.weight'}
+(EngineCore pid=405) Traceback (most recent call last):
+(EngineCore pid=405)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=405)     self.run()
+(EngineCore pid=405)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=405)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1378, in run_engine_core
+(EngineCore pid=405)     raise e
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1336, in run_engine_core
+(EngineCore pid=405)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=405)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=405)     return func(*args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1093, in __init__
+(EngineCore pid=405)     super().__init__(
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 134, in __init__
+(EngineCore pid=405)     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=405)                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=405)     return func(*args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/abstract.py", line 110, in __init__
+(EngineCore pid=405)     self._init_executor()
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/uniproc_executor.py", line 74, in _init_executor
+(EngineCore pid=405)     self.driver_worker.load_model()
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_worker.py", line 495, in load_model
+(EngineCore pid=405)     self.model_runner.load_model(load_dummy_weights=load_dummy_weights)
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu/model_runner.py", line 384, in load_model
+(EngineCore pid=405)     self.model = model_loader.load_model(
+(EngineCore pid=405)                  ^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=405)     return func(*args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/base_loader.py", line 64, in load_model
+(EngineCore pid=405)     self.load_weights(model, model_config)
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=405)     return func(*args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/default_loader.py", line 427, in load_weights
+(EngineCore pid=405)     loaded_weights = model.load_weights(self.get_all_weights(model_config, model))
+(EngineCore pid=405)                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 1022, in load_weights
+(EngineCore pid=405)     return loader.load_weights(weights, mapper=mapper)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/reload/torchao_decorator.py", line 50, in patched_model_load_weights
+(EngineCore pid=405)     return original_load_weights(self, weights, *args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 444, in load_weights
+(EngineCore pid=405)     autoloaded_weights = set(self._load_module("", self.module, weights))
+(EngineCore pid=405)                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405)     yield from self._load_module(
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 359, in _load_module
+(EngineCore pid=405)     loaded_params = module_load_weights(weights)
+(EngineCore pid=405)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 828, in load_weights
+(EngineCore pid=405)     return loader.load_weights(weights, mapper=mapper)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/reload/torchao_decorator.py", line 50, in patched_model_load_weights
+(EngineCore pid=405)     return original_load_weights(self, weights, *args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 444, in load_weights
+(EngineCore pid=405)     autoloaded_weights = set(self._load_module("", self.module, weights))
+(EngineCore pid=405)                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405)     yield from self._load_module(
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 359, in _load_module
+(EngineCore pid=405)     loaded_params = module_load_weights(weights)
+(EngineCore pid=405)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 596, in load_weights
+(EngineCore pid=405)     loaded = loader.load_weights(
+(EngineCore pid=405)              ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/reload/torchao_decorator.py", line 50, in patched_model_load_weights
+(EngineCore pid=405)     return original_load_weights(self, weights, *args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 444, in load_weights
+(EngineCore pid=405)     autoloaded_weights = set(self._load_module("", self.module, weights))
+(EngineCore pid=405)                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405)     yield from self._load_module(
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405)     yield from self._load_module(
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405)     yield from self._load_module(
+(EngineCore pid=405)   [Previous line repeated 1 more time]
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 359, in _load_module
+(EngineCore pid=405)     loaded_params = module_load_weights(weights)
+(EngineCore pid=405)                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/ple_layer.py", line 521, in load_weights
+(EngineCore pid=405)     loaded.update(AutoWeightsLoader(self).load_weights(regular_weights))
+(EngineCore pid=405)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/reload/torchao_decorator.py", line 50, in patched_model_load_weights
+(EngineCore pid=405)     return original_load_weights(self, weights, *args, **kwargs)
+(EngineCore pid=405)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 444, in load_weights
+(EngineCore pid=405)     autoloaded_weights = set(self._load_module("", self.module, weights))
+(EngineCore pid=405)                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 382, in _load_module
+(EngineCore pid=405)     yield from self._load_module(
+(EngineCore pid=405)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 417, in _load_module
+(EngineCore pid=405)     raise ValueError(msg)
+(EngineCore pid=405) ValueError: There is no module or parameter named 'ngram_embedding.weight_scale' in Qwen4ExpNGramEmbedding. The available parameters belonging to ngram_embedding (PLEVocabParallelEmbedding) are: {'ngram_embedding.weight'}
+[rank0]:[W916 06:24:14.301175799 ProcessGroupNCCL.cpp:1624] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+(APIServer pid=1) INFO 09-16 06:24:15 [utils.py:620] [shutdown] Process manager: send sigterm to process EngineCore
+(APIServer pid=1) Traceback (most recent call last):
+(APIServer pid=1)   File "/usr/local/bin/vllm", line 10, in <module>
+(APIServer pid=1)     sys.exit(main())
+(APIServer pid=1)              ^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/main.py", line 97, in main
+(APIServer pid=1)     args.dispatch_function(args)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/serve.py", line 153, in cmd
+(APIServer pid=1)     uvloop.run(run_server(args))
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=1)     return __asyncio.run(
+(APIServer pid=1)            ^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+(APIServer pid=1)     return runner.run(main)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=1)     return self._loop.run_until_complete(task)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=1)     return await main
+(APIServer pid=1)            ^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 176, in run_server
+(APIServer pid=1)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 190, in run_server_worker
+(APIServer pid=1)     async with build_async_engine_client(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=1)     return await anext(self.gen)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 58, in build_async_engine_client
+(APIServer pid=1)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=1)     return await anext(self.gen)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 94, in build_async_engine_client_from_engine_args
+(APIServer pid=1)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=1)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 227, in from_vllm_config
+(APIServer pid=1)     return cls(
+(APIServer pid=1)            ^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 156, in __init__
+(APIServer pid=1)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=1)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=1)     return func(*args, **kwargs)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 139, in make_async_mp_client
+(APIServer pid=1)     return AsyncMPClient(*client_args)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=1)     return func(*args, **kwargs)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 991, in __init__
+(APIServer pid=1)     super().__init__(
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 609, in __init__
+(APIServer pid=1)     with launch_core_engines(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=1)     next(self.gen)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1240, in launch_core_engines
+(APIServer pid=1)     wait_for_engine_startup(
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1320, in wait_for_engine_startup
+(APIServer pid=1)     raise RuntimeError(
+(APIServer pid=1) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+
+=== END CONTAINER LOGS ===
+
+[TEARDOWN] Stopping container "vllm-radixark-qwen3-8-flash-next-nvfp4"...
+
+====================================================
+       CONTAINER SETUP EXECUTION SUMMARY            
+====================================================
+  [FAILED] RadixArk/Qwen3.8-Flash-Next-NVFP4 (vllm-radixark-qwen3-8-flash-next-nvfp4) - Status: FAILED (Container "vllm-radixark-qwen3-8-flash-next-nvfp4" exited prematurely with status "exited".)
+----------------------------------------------------
+Total Models: 1 | Passed: 0 | Failed: 1
+Full log saved to: /root/llm_perf/20260916_142141_container_setup.log
+====================================================

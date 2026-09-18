@@ -1,0 +1,162 @@
+[
+  {
+    "container_name": "vllm-google-gemma-4-26b-a4b-it",
+    "model": "google/gemma-4-26B-A4B-it",
+    "start_time": "2026-09-16T08:05:05.374Z",
+    "end_time": "2026-09-16T08:07:06.848Z",
+    "total_time_ms": 121474,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-google-gemma-4-e4b-it",
+    "model": "google/gemma-4-E4B-it",
+    "start_time": "2026-09-16T09:15:25.832Z",
+    "end_time": "2026-09-16T09:17:15.133Z",
+    "total_time_ms": 109301,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-google-gemma-4-e4b-it-qat-w4a16-ct",
+    "model": "google/gemma-4-E4B-it-qat-w4a16-ct",
+    "start_time": "2026-09-16T10:36:04.896Z",
+    "end_time": "2026-09-16T10:37:53.158Z",
+    "total_time_ms": 108262,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-ibm-granite-granite-4-2-30b",
+    "model": "ibm-granite/granite-4.2-30b",
+    "start_time": "2026-09-16T11:57:09.113Z",
+    "end_time": "2026-09-16T11:58:05.925Z",
+    "total_time_ms": 56812,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-inferact-qwen3-8-27b-nvfp4",
+    "model": "Inferact/Qwen3.8-27B-NVFP4",
+    "start_time": "2026-09-16T13:06:52.778Z",
+    "end_time": "2026-09-16T13:08:41.061Z",
+    "total_time_ms": 108283,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4",
+    "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4",
+    "start_time": "2026-09-16T14:27:55.831Z",
+    "end_time": "2026-09-16T14:30:47.758Z",
+    "total_time_ms": 171927,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4",
+    "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "start_time": "2026-09-16T15:39:28.572Z",
+    "end_time": "2026-09-16T15:40:41.557Z",
+    "total_time_ms": 72985,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-nvidia-qwen3-6-27b-nvfp4",
+    "model": "nvidia/Qwen3.6-27B-NVFP4",
+    "start_time": "2026-09-16T17:19:09.598Z",
+    "end_time": "2026-09-16T17:21:18.182Z",
+    "total_time_ms": 128584,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-nvidia-qwen3-6-35b-a3b-nvfp4",
+    "model": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "start_time": "2026-09-16T18:37:21.033Z",
+    "end_time": "2026-09-16T18:39:47.986Z",
+    "total_time_ms": 146953,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-qwen-qwen3-6-27b",
+    "model": "Qwen/Qwen3.6-27B",
+    "start_time": "2026-09-16T19:54:03.668Z",
+    "end_time": "2026-09-16T19:55:47.226Z",
+    "total_time_ms": 103558,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-qwen-qwen3-6-35b-a3b",
+    "model": "Qwen/Qwen3.6-35B-A3B",
+    "start_time": "2026-09-16T20:59:40.919Z",
+    "end_time": "2026-09-16T21:02:05.909Z",
+    "total_time_ms": 144990,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-qwen-qwen3-8-27b",
+    "model": "Qwen/Qwen3.8-27B",
+    "start_time": "2026-09-16T22:05:36.191Z",
+    "end_time": "2026-09-16T22:07:22.796Z",
+    "total_time_ms": 106605,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-qwen-qwen3-8-27b-fp8",
+    "model": "Qwen/Qwen3.8-27B-FP8",
+    "start_time": "2026-09-16T23:11:12.756Z",
+    "end_time": "2026-09-16T23:12:51.266Z",
+    "total_time_ms": 98510,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-radixark-qwen3-8-flash-next-nvfp4",
+    "model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "start_time": "2026-09-17T00:27:39.303Z",
+    "end_time": "2026-09-17T00:31:30.185Z",
+    "total_time_ms": 230882,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-unsloth-qwen3-8-27b-nvfp4",
+    "model": "unsloth/Qwen3.8-27B-NVFP4",
+    "start_time": "2026-09-17T01:47:09.865Z",
+    "end_time": "2026-09-17T01:48:56.448Z",
+    "total_time_ms": 106583,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-minimaxai-minimax-m2-7",
+    "model": "MiniMaxAI/MiniMax-M2.7",
+    "start_time": "2026-09-17T10:41:30.953Z",
+    "end_time": "2026-09-17T10:44:20.173Z",
+    "total_time_ms": 169220,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-nvidia-deepseek-v4-flash-nvfp4-dspark",
+    "model": "nvidia/DeepSeek-V4-Flash-nvfp4-DSpark",
+    "start_time": "2026-09-17T11:38:25.293Z",
+    "end_time": "2026-09-17T11:44:10.166Z",
+    "total_time_ms": 344873,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-redhatai-glm-5-3-flash-nvfp4",
+    "model": "RedHatAI/GLM-5.3-Flash-NVFP4",
+    "start_time": "2026-09-17T12:26:42.483Z",
+    "end_time": "2026-09-17T12:30:21.386Z",
+    "total_time_ms": 218903,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-zai-org-glm-5-3-flash",
+    "model": "zai-org/GLM-5.3-Flash",
+    "start_time": "2026-09-17T13:13:10.597Z",
+    "end_time": "2026-09-17T13:16:57.501Z",
+    "total_time_ms": 226904,
+    "status": "ready"
+  },
+  {
+    "container_name": "vllm-nvidia-nvidia-nemotron-3-ultra-550b-a55b-nvfp4",
+    "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "start_time": "2026-09-17T14:51:13.601Z",
+    "end_time": "2026-09-17T15:02:18.107Z",
+    "total_time_ms": 664506,
+    "status": "ready"
+  }
+]

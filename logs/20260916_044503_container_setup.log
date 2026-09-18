@@ -1,0 +1,526 @@
+====================================================
+       CONTAINER SETUP & VERIFICATION STARTING      
+====================================================
+[INFO] Config file: /root/llm_perf/conf/core_models.json
+[INFO] Base Compose: /root/llm_perf/conf/base_compose.yaml
+[INFO] Log file:    /root/llm_perf/20260916_044503_container_setup.log
+[INFO] Loaded 15 configuration row(s).
+
+----------------------------------------------------
+[CLEANUP] Stopping existing running Docker containers...
+----------------------------------------------------
+[CLEANUP] Found 5 container(s) starting with "vllm-": vllm-google-gemma-4-26b-a4b-it, vllm-inferact-qwen3-8-27b-nvfp4, vllm-ibm-granite-granite-4-2-30b, vllm-google-gemma-4-e4b-it-qat-w4a16-ct, vllm-google-gemma-4-e4b-it
+[CLEANUP] Stopping container "vllm-google-gemma-4-26b-a4b-it"...
+[CLEANUP] Container "vllm-google-gemma-4-26b-a4b-it" stopped successfully.
+[CLEANUP] Stopping container "vllm-inferact-qwen3-8-27b-nvfp4"...
+[CLEANUP] Container "vllm-inferact-qwen3-8-27b-nvfp4" stopped successfully.
+[CLEANUP] Stopping container "vllm-ibm-granite-granite-4-2-30b"...
+[CLEANUP] Container "vllm-ibm-granite-granite-4-2-30b" stopped successfully.
+[CLEANUP] Stopping container "vllm-google-gemma-4-e4b-it-qat-w4a16-ct"...
+[CLEANUP] Container "vllm-google-gemma-4-e4b-it-qat-w4a16-ct" stopped successfully.
+[CLEANUP] Stopping container "vllm-google-gemma-4-e4b-it"...
+[CLEANUP] Container "vllm-google-gemma-4-e4b-it" stopped successfully.
+
+----------------------------------------------------
+[ROW 1/15] Target Model: google/gemma-4-26B-A4B-it
+[CONTAINER NAME]: vllm-google-gemma-4-26b-a4b-it
+----------------------------------------------------
+[START] Spawning container "vllm-google-gemma-4-26b-a4b-it" via Docker Compose (-f base_compose.yaml -f vllm-google-gemma-4-26b-a4b-it.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "google/gemma-4-26B-A4B-it" is ready and available! (Time: 123.01s)
+[TEARDOWN] Stopping container "vllm-google-gemma-4-26b-a4b-it" after successful run...
+
+----------------------------------------------------
+[ROW 2/15] Target Model: google/gemma-4-E4B-it
+[CONTAINER NAME]: vllm-google-gemma-4-e4b-it
+----------------------------------------------------
+[START] Spawning container "vllm-google-gemma-4-e4b-it" via Docker Compose (-f base_compose.yaml -f vllm-google-gemma-4-e4b-it.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "google/gemma-4-E4B-it" is ready and available! (Time: 228.08s)
+[TEARDOWN] Stopping container "vllm-google-gemma-4-e4b-it" after successful run...
+
+----------------------------------------------------
+[ROW 3/15] Target Model: google/gemma-4-E4B-it-qat-w4a16-ct
+[CONTAINER NAME]: vllm-google-gemma-4-e4b-it-qat-w4a16-ct
+----------------------------------------------------
+[START] Spawning container "vllm-google-gemma-4-e4b-it-qat-w4a16-ct" via Docker Compose (-f base_compose.yaml -f vllm-google-gemma-4-e4b-it-qat-w4a16-ct.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "google/gemma-4-E4B-it-qat-w4a16-ct" is ready and available! (Time: 254.25s)
+[TEARDOWN] Stopping container "vllm-google-gemma-4-e4b-it-qat-w4a16-ct" after successful run...
+
+----------------------------------------------------
+[ROW 4/15] Target Model: ibm-granite/granite-4.2-30b
+[CONTAINER NAME]: vllm-ibm-granite-granite-4-2-30b
+----------------------------------------------------
+[START] Spawning container "vllm-ibm-granite-granite-4-2-30b" via Docker Compose (-f base_compose.yaml -f vllm-ibm-granite-granite-4-2-30b.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "ibm-granite/granite-4.2-30b" is ready and available! (Time: 121.49s)
+[TEARDOWN] Stopping container "vllm-ibm-granite-granite-4-2-30b" after successful run...
+
+----------------------------------------------------
+[ROW 5/15] Target Model: Inferact/Qwen3.8-27B-NVFP4
+[CONTAINER NAME]: vllm-inferact-qwen3-8-27b-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-inferact-qwen3-8-27b-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-inferact-qwen3-8-27b-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "Inferact/Qwen3.8-27B-NVFP4" is ready and available! (Time: 216.03s)
+[TEARDOWN] Stopping container "vllm-inferact-qwen3-8-27b-nvfp4" after successful run...
+
+----------------------------------------------------
+[ROW 6/15] Target Model: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
+[CONTAINER NAME]: vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4" is ready and available! (Time: 565.39s)
+[TEARDOWN] Stopping container "vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4" after successful run...
+
+----------------------------------------------------
+[ROW 7/15] Target Model: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+[CONTAINER NAME]: vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4" is ready and available! (Time: 297.95s)
+[TEARDOWN] Stopping container "vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4" after successful run...
+
+----------------------------------------------------
+[ROW 8/15] Target Model: nvidia/Qwen3.6-27B-NVFP4
+[CONTAINER NAME]: vllm-nvidia-qwen3-6-27b-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-nvidia-qwen3-6-27b-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-nvidia-qwen3-6-27b-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "nvidia/Qwen3.6-27B-NVFP4" is ready and available! (Time: 322.09s)
+[TEARDOWN] Stopping container "vllm-nvidia-qwen3-6-27b-nvfp4" after successful run...
+
+----------------------------------------------------
+[ROW 9/15] Target Model: nvidia/Qwen3.6-35B-A3B-NVFP4
+[CONTAINER NAME]: vllm-nvidia-qwen3-6-35b-a3b-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-nvidia-qwen3-6-35b-a3b-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-nvidia-qwen3-6-35b-a3b-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "nvidia/Qwen3.6-35B-A3B-NVFP4" is ready and available! (Time: 342.20s)
+[TEARDOWN] Stopping container "vllm-nvidia-qwen3-6-35b-a3b-nvfp4" after successful run...
+
+----------------------------------------------------
+[ROW 10/15] Target Model: Qwen/Qwen3.6-27B
+[CONTAINER NAME]: vllm-qwen-qwen3-6-27b
+----------------------------------------------------
+[START] Spawning container "vllm-qwen-qwen3-6-27b" via Docker Compose (-f base_compose.yaml -f vllm-qwen-qwen3-6-27b.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "Qwen/Qwen3.6-27B" is ready and available! (Time: 173.29s)
+[TEARDOWN] Stopping container "vllm-qwen-qwen3-6-27b" after successful run...
+
+----------------------------------------------------
+[ROW 11/15] Target Model: Qwen/Qwen3.6-35B-A3B
+[CONTAINER NAME]: vllm-qwen-qwen3-6-35b-a3b
+----------------------------------------------------
+[START] Spawning container "vllm-qwen-qwen3-6-35b-a3b" via Docker Compose (-f base_compose.yaml -f vllm-qwen-qwen3-6-35b-a3b.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "Qwen/Qwen3.6-35B-A3B" is ready and available! (Time: 205.45s)
+[TEARDOWN] Stopping container "vllm-qwen-qwen3-6-35b-a3b" after successful run...
+
+----------------------------------------------------
+[ROW 12/15] Target Model: Qwen/Qwen3.8-27B
+[CONTAINER NAME]: vllm-qwen-qwen3-8-27b
+----------------------------------------------------
+[START] Spawning container "vllm-qwen-qwen3-8-27b" via Docker Compose (-f base_compose.yaml -f vllm-qwen-qwen3-8-27b.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "Qwen/Qwen3.8-27B" is ready and available! (Time: 171.28s)
+[TEARDOWN] Stopping container "vllm-qwen-qwen3-8-27b" after successful run...
+
+----------------------------------------------------
+[ROW 13/15] Target Model: Qwen/Qwen3.8-27B-FP8
+[CONTAINER NAME]: vllm-qwen-qwen3-8-27b-fp8
+----------------------------------------------------
+[START] Spawning container "vllm-qwen-qwen3-8-27b-fp8" via Docker Compose (-f base_compose.yaml -f vllm-qwen-qwen3-8-27b-fp8.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[POLL] Endpoint http://localhost:8000/v1/models is ready (HTTP 200).
+[SUCCESS] Model "Qwen/Qwen3.8-27B-FP8" is ready and available! (Time: 201.45s)
+[TEARDOWN] Stopping container "vllm-qwen-qwen3-8-27b-fp8" after successful run...
+
+----------------------------------------------------
+[ROW 14/15] Target Model: RadixArk/Qwen3.8-Flash-Next-NVFP4
+[CONTAINER NAME]: vllm-radixark-qwen3-8-flash-next-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-radixark-qwen3-8-flash-next-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-radixark-qwen3-8-flash-next-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[FAILURE] Container "vllm-radixark-qwen3-8-flash-next-nvfp4" failed readiness check: Container "vllm-radixark-qwen3-8-flash-next-nvfp4" exited prematurely with status "exited".
+[FAIL] Model "RadixArk/Qwen3.8-Flash-Next-NVFP4" failed readiness after 60.82s.
+
+=== INTERLEAVED CONTAINER LOGS (vllm-radixark-qwen3-8-flash-next-nvfp4) ===
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1336, in run_engine_core
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=694) Process EngineCore:
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     return func(*args, **kwargs)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1093, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     super().__init__(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 134, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     return func(*args, **kwargs)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/abstract.py", line 110, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self._init_executor()
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/uniproc_executor.py", line 74, in _init_executor
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.driver_worker.load_model()
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_worker.py", line 495, in load_model
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.model_runner.load_model(load_dummy_weights=load_dummy_weights)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu/model_runner.py", line 384, in load_model
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.model = model_loader.load_model(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                  ^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     return func(*args, **kwargs)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/base_loader.py", line 55, in load_model
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     model = initialize_model(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]             ^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     return func(*args, **kwargs)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/utils.py", line 59, in initialize_model
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     model = model_class(vllm_config=vllm_config, prefix=prefix)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 923, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.language_model = Qwen4ExpForCausalLM(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                           ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 641, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.model = Qwen4ExpModel(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                  ^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/compilation/decorators.py", line 385, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     old_init(self, *args, **kwargs)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 418, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.start_layer, self.end_layer, self.layers = make_layers(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                                                     ^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 858, in make_layers
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     + get_offloader().wrap_modules(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/offloader/base.py", line 119, in wrap_modules
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     return list(modules_generator)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 859, in <genexpr>
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     layer_fn(prefix=f"{prefix}.{idx}") for idx in range(start_layer, end_layer)
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 412, in get_layer
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     return Qwen4ExpDecoderLayer(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 228, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     self.self_attn = Qwen4ExpQSAAttention(
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]                      ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/qsa.py", line 191, in __init__
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374]     raise NotImplementedError("Qwen4Exp QSA requires a BF16 main KV cache")
+(EngineCore pid=694) ERROR 09-15 21:39:53 [core.py:1374] NotImplementedError: Qwen4Exp QSA requires a BF16 main KV cache
+(EngineCore pid=694) Traceback (most recent call last):
+(EngineCore pid=694)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=694)     self.run()
+(EngineCore pid=694)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=694)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1378, in run_engine_core
+(EngineCore pid=694)     raise e
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1336, in run_engine_core
+(EngineCore pid=694)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=694)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694)     return func(*args, **kwargs)
+(EngineCore pid=694)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1093, in __init__
+(EngineCore pid=694)     super().__init__(
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 134, in __init__
+(EngineCore pid=694)     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=694)                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694)     return func(*args, **kwargs)
+(EngineCore pid=694)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/abstract.py", line 110, in __init__
+(EngineCore pid=694)     self._init_executor()
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/uniproc_executor.py", line 74, in _init_executor
+(EngineCore pid=694)     self.driver_worker.load_model()
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_worker.py", line 495, in load_model
+(EngineCore pid=694)     self.model_runner.load_model(load_dummy_weights=load_dummy_weights)
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu/model_runner.py", line 384, in load_model
+(EngineCore pid=694)     self.model = model_loader.load_model(
+(EngineCore pid=694)                  ^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694)     return func(*args, **kwargs)
+(EngineCore pid=694)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/base_loader.py", line 55, in load_model
+(EngineCore pid=694)     model = initialize_model(
+(EngineCore pid=694)             ^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=694)     return func(*args, **kwargs)
+(EngineCore pid=694)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/utils.py", line 59, in initialize_model
+(EngineCore pid=694)     model = model_class(vllm_config=vllm_config, prefix=prefix)
+(EngineCore pid=694)             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 923, in __init__
+(EngineCore pid=694)     self.language_model = Qwen4ExpForCausalLM(
+(EngineCore pid=694)                           ^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 641, in __init__
+(EngineCore pid=694)     self.model = Qwen4ExpModel(
+(EngineCore pid=694)                  ^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/compilation/decorators.py", line 385, in __init__
+(EngineCore pid=694)     old_init(self, *args, **kwargs)
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 418, in __init__
+(EngineCore pid=694)     self.start_layer, self.end_layer, self.layers = make_layers(
+(EngineCore pid=694)                                                     ^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 858, in make_layers
+(EngineCore pid=694)     + get_offloader().wrap_modules(
+(EngineCore pid=694)       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/offloader/base.py", line 119, in wrap_modules
+(EngineCore pid=694)     return list(modules_generator)
+(EngineCore pid=694)            ^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/utils.py", line 859, in <genexpr>
+(EngineCore pid=694)     layer_fn(prefix=f"{prefix}.{idx}") for idx in range(start_layer, end_layer)
+(EngineCore pid=694)     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 412, in get_layer
+(EngineCore pid=694)     return Qwen4ExpDecoderLayer(
+(EngineCore pid=694)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/model.py", line 228, in __init__
+(EngineCore pid=694)     self.self_attn = Qwen4ExpQSAAttention(
+(EngineCore pid=694)                      ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=694)   File "/usr/local/lib/python3.12/dist-packages/vllm/models/qwen4_exp/nvidia/qsa.py", line 191, in __init__
+(EngineCore pid=694)     raise NotImplementedError("Qwen4Exp QSA requires a BF16 main KV cache")
+(EngineCore pid=694) NotImplementedError: Qwen4Exp QSA requires a BF16 main KV cache
+[rank0]:[W915 21:39:53.863732721 ProcessGroupNCCL.cpp:1624] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+(APIServer pid=1) INFO 09-15 21:39:54 [utils.py:620] [shutdown] Process manager: send sigterm to process EngineCore
+(APIServer pid=1) Traceback (most recent call last):
+(APIServer pid=1)   File "/usr/local/bin/vllm", line 10, in <module>
+(APIServer pid=1)     sys.exit(main())
+(APIServer pid=1)              ^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/main.py", line 97, in main
+(APIServer pid=1)     args.dispatch_function(args)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/serve.py", line 153, in cmd
+(APIServer pid=1)     uvloop.run(run_server(args))
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=1)     return __asyncio.run(
+(APIServer pid=1)            ^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+(APIServer pid=1)     return runner.run(main)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=1)     return self._loop.run_until_complete(task)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=1)     return await main
+(APIServer pid=1)            ^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 176, in run_server
+(APIServer pid=1)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 190, in run_server_worker
+(APIServer pid=1)     async with build_async_engine_client(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=1)     return await anext(self.gen)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 58, in build_async_engine_client
+(APIServer pid=1)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=1)     return await anext(self.gen)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 94, in build_async_engine_client_from_engine_args
+(APIServer pid=1)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=1)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 227, in from_vllm_config
+(APIServer pid=1)     return cls(
+(APIServer pid=1)            ^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 156, in __init__
+(APIServer pid=1)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=1)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=1)     return func(*args, **kwargs)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 139, in make_async_mp_client
+(APIServer pid=1)     return AsyncMPClient(*client_args)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=1)     return func(*args, **kwargs)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 991, in __init__
+(APIServer pid=1)     super().__init__(
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 609, in __init__
+(APIServer pid=1)     with launch_core_engines(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=1)     next(self.gen)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1240, in launch_core_engines
+(APIServer pid=1)     wait_for_engine_startup(
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1320, in wait_for_engine_startup
+(APIServer pid=1)     raise RuntimeError(
+(APIServer pid=1) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+
+=== END CONTAINER LOGS ===
+
+[TEARDOWN] Stopping container "vllm-radixark-qwen3-8-flash-next-nvfp4"...
+
+----------------------------------------------------
+[ROW 15/15] Target Model: unsloth/Qwen3.8-27B-NVFP4
+[CONTAINER NAME]: vllm-unsloth-qwen3-8-27b-nvfp4
+----------------------------------------------------
+[START] Spawning container "vllm-unsloth-qwen3-8-27b-nvfp4" via Docker Compose (-f base_compose.yaml -f vllm-unsloth-qwen3-8-27b-nvfp4.yaml)...
+[POLL] Polling readiness at http://localhost:8000/v1/models (timeout: 1800s)...
+[FAILURE] Container "vllm-unsloth-qwen3-8-27b-nvfp4" failed readiness check: Container "vllm-unsloth-qwen3-8-27b-nvfp4" exited prematurely with status "exited".
+[FAIL] Model "unsloth/Qwen3.8-27B-NVFP4" failed readiness after 42.58s.
+
+=== INTERLEAVED CONTAINER LOGS (vllm-unsloth-qwen3-8-27b-nvfp4) ===
+WARNING 09-15 21:40:14 [argparse_utils.py:276] With `vllm serve`, you should provide the model as a positional argument or in a config file instead of via the `--model` option. The `--model` option will be removed in a future version.
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:347] 
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:347]        █     █     █▄   ▄█
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:347]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.29.0
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:347]   █▄█▀ █     █     █     █  model   unsloth/Qwen3.8-27B-NVFP4
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:347]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:347] 
+(APIServer pid=1) INFO 09-15 21:40:14 [api_utils.py:286] non-default args: {'model_tag': 'unsloth/Qwen3.8-27B-NVFP4', 'enable_auto_tool_choice': True, 'tool_call_parser': 'qwen3_coder', 'enable_prompt_tokens_details': True, 'host': '0.0.0.0', 'model': 'unsloth/Qwen3.8-27B-NVFP4', 'trust_remote_code': True, 'max_model_len': 32768, 'served_model_name': ['unsloth/Qwen3.8-27B-NVFP4'], 'reasoning_parser': 'qwen3', 'gpu_memory_utilization': 0.4, 'kv_cache_dtype': 'fp8', 'max_num_seqs': 256, 'async_scheduling': True}
+(APIServer pid=1) INFO 09-15 21:40:14 [arg_utils.py:866] HF_HUB_OFFLINE is True, replace model_id [unsloth/Qwen3.8-27B-NVFP4] to model_path [/hf-cache/hub/models--unsloth--Qwen3.8-27B-NVFP4/snapshots/f0b7c9e722f5565102fff8481c99e4d86ae099c7]
+(APIServer pid=1) INFO 09-15 21:40:14 [model.py:684] Resolved architecture: Qwen3_5ForConditionalGeneration
+(APIServer pid=1) INFO 09-15 21:40:14 [model.py:2021] Using max model len 32768
+(APIServer pid=1) INFO 09-15 21:40:21 [cache.py:335] Using fp8 data type to store kv cache. It reduces the GPU memory footprint and boosts the performance. Meanwhile, it may cause accuracy drop without a proper scaling factor
+(APIServer pid=1) INFO 09-15 21:40:21 [scheduler.py:277] Chunked prefill is enabled with max_num_batched_tokens=16384.
+(APIServer pid=1) INFO 09-15 21:40:21 [config.py:625] Mamba cache mode is set to 'align' for Qwen3_5ForConditionalGeneration by default when prefix caching is enabled
+(APIServer pid=1) INFO 09-15 21:40:21 [kernel.py:369] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(APIServer pid=1) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:1112: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+INFO 09-15 21:40:35 [importing.py:74] Triton is installed but 0 active driver(s) found (expected 1). Disabling Triton to prevent runtime errors.
+INFO 09-15 21:40:35 [importing.py:98] Triton not installed or not compatible; certain GPU-related functions will not be available.
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:1112: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+W0915 21:40:35.152000 404 torch/utils/cpp_extension.py:178] No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:1112: UserWarning: Can't initialize NVML
+  raw_cnt = _raw_device_count_nvml()
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/quantization/compressed_tensors/compressed_tensors.py", line 22, in <module>
+    from vllm.model_executor.layers.attention import Attention
+  File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/attention/__init__.py", line 15, in <module>
+    from vllm.model_executor.layers.attention.mm_encoder_attention import MMEncoderAttention
+  File "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py", line 11, in <module>
+    from vllm.kernels.triton.qkv_padded_fp8_quant import (
+  File "/usr/local/lib/python3.12/dist-packages/vllm/kernels/__init__.py", line 5, in <module>
+    from . import aiter_ops, oink_ops, vllm_c
+  File "/usr/local/lib/python3.12/dist-packages/vllm/kernels/oink_ops.py", line 18, in <module>
+    OINK_AVAILABLE = current_platform.has_device_capability(100) and hasattr(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/vllm/platforms/cuda.py", line 765, in has_device_capability
+    return super().has_device_capability(capability, device_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/vllm/platforms/interface.py", line 447, in has_device_capability
+    current_capability = cls.get_device_capability(device_id=device_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/vllm/platforms/cuda.py", line 184, in wrapper
+    pynvml.nvmlInit()
+  File "/usr/local/lib/python3.12/dist-packages/vllm/third_party/pynvml.py", line 2392, in nvmlInit
+    nvmlInitWithFlags(0)
+  File "/usr/local/lib/python3.12/dist-packages/vllm/third_party/pynvml.py", line 2382, in nvmlInitWithFlags
+    _nvmlCheckReturn(ret)
+  File "/usr/local/lib/python3.12/dist-packages/vllm/third_party/pynvml.py", line 1047, in _nvmlCheckReturn
+    raise NVMLError(ret)
+vllm.third_party.pynvml.NVMLError_Unknown: Unknown Error
+(APIServer pid=1) Traceback (most recent call last):
+(APIServer pid=1)   File "/usr/local/bin/vllm", line 10, in <module>
+(APIServer pid=1)     sys.exit(main())
+(APIServer pid=1)              ^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/main.py", line 97, in main
+(APIServer pid=1)     args.dispatch_function(args)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/serve.py", line 153, in cmd
+(APIServer pid=1)     uvloop.run(run_server(args))
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=1)     return __asyncio.run(
+(APIServer pid=1)            ^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+(APIServer pid=1)     return runner.run(main)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=1)     return self._loop.run_until_complete(task)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=1)     return await main
+(APIServer pid=1)            ^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 176, in run_server
+(APIServer pid=1)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 190, in run_server_worker
+(APIServer pid=1)     async with build_async_engine_client(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=1)     return await anext(self.gen)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 58, in build_async_engine_client
+(APIServer pid=1)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=1)     return await anext(self.gen)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/launchers/api_server/entry.py", line 94, in build_async_engine_client_from_engine_args
+(APIServer pid=1)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=1)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 227, in from_vllm_config
+(APIServer pid=1)     return cls(
+(APIServer pid=1)            ^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 156, in __init__
+(APIServer pid=1)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=1)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=1)     return func(*args, **kwargs)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 139, in make_async_mp_client
+(APIServer pid=1)     return AsyncMPClient(*client_args)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=1)     return func(*args, **kwargs)
+(APIServer pid=1)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 991, in __init__
+(APIServer pid=1)     super().__init__(
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 609, in __init__
+(APIServer pid=1)     with launch_core_engines(
+(APIServer pid=1)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=1)     next(self.gen)
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1240, in launch_core_engines
+(APIServer pid=1)     wait_for_engine_startup(
+(APIServer pid=1)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1320, in wait_for_engine_startup
+(APIServer pid=1)     raise RuntimeError(
+(APIServer pid=1) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+
+=== END CONTAINER LOGS ===
+
+[TEARDOWN] Stopping container "vllm-unsloth-qwen3-8-27b-nvfp4"...
+
+====================================================
+       CONTAINER SETUP EXECUTION SUMMARY            
+====================================================
+  [PASSED] google/gemma-4-26B-A4B-it (vllm-google-gemma-4-26b-a4b-it) - 123.01s
+  [PASSED] google/gemma-4-E4B-it (vllm-google-gemma-4-e4b-it) - 228.08s
+  [PASSED] google/gemma-4-E4B-it-qat-w4a16-ct (vllm-google-gemma-4-e4b-it-qat-w4a16-ct) - 254.25s
+  [PASSED] ibm-granite/granite-4.2-30b (vllm-ibm-granite-granite-4-2-30b) - 121.49s
+  [PASSED] Inferact/Qwen3.8-27B-NVFP4 (vllm-inferact-qwen3-8-27b-nvfp4) - 216.03s
+  [PASSED] nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4 (vllm-nvidia-nvidia-nemotron-3-super-120b-a12b-nvfp4) - 565.39s
+  [PASSED] nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 (vllm-nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4) - 297.95s
+  [PASSED] nvidia/Qwen3.6-27B-NVFP4 (vllm-nvidia-qwen3-6-27b-nvfp4) - 322.09s
+  [PASSED] nvidia/Qwen3.6-35B-A3B-NVFP4 (vllm-nvidia-qwen3-6-35b-a3b-nvfp4) - 342.20s
+  [PASSED] Qwen/Qwen3.6-27B (vllm-qwen-qwen3-6-27b) - 173.29s
+  [PASSED] Qwen/Qwen3.6-35B-A3B (vllm-qwen-qwen3-6-35b-a3b) - 205.45s
+  [PASSED] Qwen/Qwen3.8-27B (vllm-qwen-qwen3-8-27b) - 171.28s
+  [PASSED] Qwen/Qwen3.8-27B-FP8 (vllm-qwen-qwen3-8-27b-fp8) - 201.45s
+  [FAILED] RadixArk/Qwen3.8-Flash-Next-NVFP4 (vllm-radixark-qwen3-8-flash-next-nvfp4) - Status: FAILED (Container "vllm-radixark-qwen3-8-flash-next-nvfp4" exited prematurely with status "exited".)
+  [FAILED] unsloth/Qwen3.8-27B-NVFP4 (vllm-unsloth-qwen3-8-27b-nvfp4) - Status: FAILED (Container "vllm-unsloth-qwen3-8-27b-nvfp4" exited prematurely with status "exited".)
+----------------------------------------------------
+Total Models: 15 | Passed: 13 | Failed: 2
+Full log saved to: /root/llm_perf/20260916_044503_container_setup.log
+====================================================
