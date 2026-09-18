@@ -1,0 +1,210 @@
+2026-09-17 09:48:58.486 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 09:48:58.488 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-17 09:48:58.489 - aiperf.cli_runner._multi_run - INFO -   Configurations: 7
+2026-09-17 09:48:58.489 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 2
+2026-09-17 09:48:58.489 - aiperf.cli_runner._multi_run - INFO -   Total runs: 14
+2026-09-17 09:48:58.490 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-17 09:48:58.490 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 60.0s
+2026-09-17 09:48:58.490 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 09:48:58.491 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 5400s
+2026-09-17 09:48:58.492 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 2 trials x 7 variations
+2026-09-17 09:48:58.493 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-17 09:48:59.268 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:48:59.622 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/unsloth/Qwen3.8-27B-NVFP4 "HTTP/1.1 200 OK"
+2026-09-17 09:48:59.624 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 09:48:59.625 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.3s
+2026-09-17 09:48:59.625 - aiperf.config.resolution.resolvers - INFO - Prefetching 1 tokenizer into HF cache...
+2026-09-17 09:49:00.652 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 09:49:00.918 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/config.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Fconfig.json=&etag=%22b6f6347774036d406eabed6cfffb0fec424ba075%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:01.120 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/config.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Fconfig.json=&etag=%22b6f6347774036d406eabed6cfffb0fec424ba075%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:01.339 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 09:49:01.539 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/tokenizer_config.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22088fbebf189b39e2dabcdb12a83a31617fe98c2e%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:01.754 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/tokenizer_config.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22088fbebf189b39e2dabcdb12a83a31617fe98c2e%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:01.953 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 09:49:01.995 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/tokenizer_config.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22088fbebf189b39e2dabcdb12a83a31617fe98c2e%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:02.210 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/unsloth/Qwen3.8-27B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 09:49:02.414 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/unsloth/Qwen3.8-27B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 09:49:02.614 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 09:49:02.824 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/vocab.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Fvocab.json=&etag=%220aa0ce0658d60ac4a5d609f4eadb0e8e43514176%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:03.123 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/vocab.json?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Fvocab.json=&etag=%220aa0ce0658d60ac4a5d609f4eadb0e8e43514176%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:03.686 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/merges.txt "HTTP/1.1 404 Not Found"
+2026-09-17 09:49:03.891 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-09-17 09:49:04.092 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/unsloth/Qwen3.8-27B-NVFP4/xet-read-token/f0b7c9e722f5565102fff8481c99e4d86ae099c7 "HTTP/1.1 200 OK"
+2026-09-17 09:49:06.113 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-09-17 09:49:06.316 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-09-17 09:49:06.513 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 09:49:06.716 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/chat_template.jinja?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22a087700658910c336c9ca9f5780a75a3cdd4fcdd%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:06.917 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/unsloth/Qwen3.8-27B-NVFP4/f0b7c9e722f5565102fff8481c99e4d86ae099c7/chat_template.jinja?%2Funsloth%2FQwen3.8-27B-NVFP4%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22a087700658910c336c9ca9f5780a75a3cdd4fcdd%22 "HTTP/1.1 200 OK"
+2026-09-17 09:49:07.683 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/unsloth/Qwen3.8-27B-NVFP4 "HTTP/1.1 200 OK"
+2026-09-17 09:49:07.765 - aiperf.config.resolution.resolvers - INFO -   Cached unsloth/Qwen3.8-27B-NVFP4 (8.13s)
+2026-09-17 09:49:07.769 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer cached • 8.1s
+2026-09-17 09:54:16.644 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-17 09:54:17.426 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:54:17.434 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 09:54:17.435 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:54:17.435 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 09:59:25.400 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-17 09:59:26.182 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:59:26.190 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 09:59:26.191 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:59:26.191 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:04:35.197 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-17 10:04:35.956 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:04:35.964 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:04:35.965 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:04:35.965 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:09:47.410 - aiperf.orchestrator.orchestrator - INFO - [v4 t0] Executing run_0001...
+2026-09-17 10:09:48.173 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:09:48.181 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:09:48.182 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:09:48.182 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:15:02.846 - aiperf.orchestrator.orchestrator - INFO - [v5 t0] Executing run_0001...
+2026-09-17 10:15:03.601 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:15:03.609 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:15:03.610 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:15:03.610 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:20:17.126 - aiperf.orchestrator.orchestrator - INFO - [v6 t0] Executing run_0001...
+2026-09-17 10:20:17.880 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:20:17.888 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:20:17.889 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:20:17.889 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:25:40.987 - aiperf.orchestrator.orchestrator - INFO - Inter-trial cooldown: 60.0s
+2026-09-17 10:26:41.048 - aiperf.orchestrator.orchestrator - INFO - [v0 t1] Executing run_0002...
+2026-09-17 10:26:41.824 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:26:41.833 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:26:41.833 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:26:41.834 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:31:50.595 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 10:31:50.597 - aiperf.orchestrator.orchestrator - INFO - [v1 t1] Executing run_0002...
+2026-09-17 10:31:51.398 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:31:51.407 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:31:51.407 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:31:51.408 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:36:59.259 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 10:36:59.262 - aiperf.orchestrator.orchestrator - INFO - [v2 t1] Executing run_0002...
+2026-09-17 10:37:00.045 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:37:00.053 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:37:00.053 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:37:00.054 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:42:09.082 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 10:42:09.084 - aiperf.orchestrator.orchestrator - INFO - [v3 t1] Executing run_0002...
+2026-09-17 10:42:09.863 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:42:09.872 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:42:09.872 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:42:09.873 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:47:21.581 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 10:47:21.583 - aiperf.orchestrator.orchestrator - INFO - [v4 t1] Executing run_0002...
+2026-09-17 10:47:22.349 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:47:22.357 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:47:22.358 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:47:22.358 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:52:37.384 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 10:52:37.387 - aiperf.orchestrator.orchestrator - INFO - [v5 t1] Executing run_0002...
+2026-09-17 10:52:38.156 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:52:38.164 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:52:38.165 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:52:38.165 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 10:57:51.748 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 10:57:51.751 - aiperf.orchestrator.orchestrator - INFO - [v6 t1] Executing run_0002...
+2026-09-17 10:57:52.520 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 10:57:52.529 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer unsloth/Qwen3.8-27B-NVFP4 detected
+2026-09-17 10:57:52.529 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 10:57:52.530 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['unsloth/Qwen3.8-27B-NVFP4']
+2026-09-17 11:03:15.635 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                           256                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 11:03:15.638 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 14/14 runs successful
+2026-09-17 11:03:15.639 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 11:03:15.639 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 11:03:15.640 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-17 11:03:15.853 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.853 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:15.854 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 11:03:15.855 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=1) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.877 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 11:03:15.878 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 11:03:15.878 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 11:03:15.879 - aiperf.cli_runner._multi_run - INFO - 
+2026-09-17 11:03:15.879 - aiperf.cli_runner._multi_run - INFO - Best Configurations:
+2026-09-17 11:03:15.879 - aiperf.cli_runner._multi_run - INFO -   Best throughput: concurrency=256 (13.91 requests/sec)
+2026-09-17 11:03:15.879 - aiperf.cli_runner._multi_run - INFO -   Best latency (p99): concurrency=1 (125.76 ms)
+2026-09-17 11:03:15.880 - aiperf.cli_runner._multi_run - INFO -   Pareto optimal points: [{'concurrency': 1}, {'concurrency': 4}, {'concurrency': 16}, {'concurrency': 32}, {'concurrency': 64}, {'concurrency': 128}, {'concurrency': 256}]
+2026-09-17 11:03:15.887 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.888 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:15.888 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=4) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.917 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.918 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:15.918 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=16) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.947 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:15.947 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.948 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.976 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:15.977 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:15.978 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=64) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:16.006 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:16.007 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:16.007 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=128) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:16.036 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
+2026-09-17 11:03:16.037 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json
+2026-09-17 11:03:16.037 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=256) JSON: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_094856_unsloth_Qwen3.8-27B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv

@@ -1,0 +1,116 @@
+
+
+                                           NVIDIA AIPerf | LLM Metrics: Effective                                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┓
+┃                                    Metric ┃      avg ┃      min ┃       max ┃       p99 ┃      p90 ┃      p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━┩
+│          Effective Concurrency (requests) │     4.00 │     0.00 │      4.00 │      4.00 │     4.00 │     4.00 │     0.09 │
+│  Effective Decode Throughput (tokens/sec) │   523.78 │     0.00 │  1,088.15 │    572.56 │   566.83 │   553.23 │   121.68 │
+│ Effective Prefill Throughput (tokens/sec) │ 1,090.70 │     0.00 │ 22,937.11 │ 22,608.99 │     0.00 │     0.00 │ 4,777.60 │
+│   Effective Decode Concurrency (requests) │     3.80 │     0.00 │      4.00 │      4.00 │     4.00 │     4.00 │     0.87 │
+│  Effective Prefill Concurrency (requests) │     0.20 │     0.00 │      4.00 │      4.00 │     0.00 │     0.00 │     0.86 │
+│   Effective Total Throughput (tokens/sec) │ 1,614.48 │     0.00 │ 22,937.11 │ 22,608.99 │   551.44 │   551.24 │ 4,659.03 │
+│      Effective Decode Throughput Per User │   131.20 │     0.00 │    500.24 │    143.31 │   141.71 │   138.31 │    30.63 │
+│                         (tokens/sec/user) │          │          │           │           │          │          │          │
+│     Effective Prefill Throughput Per User │   281.71 │     0.00 │  5,768.11 │  5,653.78 │     0.00 │     0.00 │ 1,219.67 │
+│                         (tokens/sec/user) │          │          │           │           │          │          │          │
+│                 Tokens In Flight (tokens) │ 5,227.91 │     0.00 │  6,303.99 │  6,277.89 │ 6,084.82 │ 5,227.63 │   625.25 │
+│         Effective Latency (CO-aware) (ms) │ 3,900.79 │ 3,893.73 │  3,924.67 │  3,917.56 │ 3,905.97 │ 3,899.85 │     4.67 │
+└───────────────────────────────────────────┴──────────┴──────────┴───────────┴───────────┴──────────┴──────────┴──────────┘
+                                            NVIDIA AIPerf | LLM Metrics: Active                                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━┓
+┃                                 Metric ┃       avg ┃      min ┃       max ┃       p99 ┃       p90 ┃       p50 ┃      std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━┩
+│  Active Decode Throughput (tokens/sec) │    550.55 │     0.00 │  1,088.15 │    572.78 │    566.94 │    553.43 │    28.75 │
+│ Active Prefill Throughput (tokens/sec) │ 21,522.38 │ 4,928.26 │ 22,937.11 │ 22,937.11 │ 22,722.71 │ 22,375.52 │ 3,265.96 │
+│      Active Decode Throughput Per User │    137.91 │     0.00 │    500.24 │    143.44 │    141.74 │    138.36 │     7.85 │
+│                      (tokens/sec/user) │           │          │           │           │           │           │          │
+│     Active Prefill Throughput Per User │  5,558.82 │ 4,928.26 │  5,768.11 │  5,734.28 │  5,680.68 │  5,596.17 │   139.48 │
+│                      (tokens/sec/user) │           │          │           │           │           │           │          │
+│   Active Total Throughput (tokens/sec) │  1,614.50 │   137.73 │ 22,937.11 │ 22,608.99 │    551.44 │    551.24 │ 4,659.06 │
+└────────────────────────────────────────┴───────────┴──────────┴───────────┴───────────┴───────────┴───────────┴──────────┘
+                                           NVIDIA AIPerf | LLM Metrics: Usage                                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┓
+┃                                  Metric ┃        avg ┃      min ┃      max ┃      p99 ┃      p90 ┃      p50 ┃    std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━┩
+│            Usage Prompt Tokens (tokens) │   1,064.10 │ 1,064.00 │ 1,066.00 │ 1,065.00 │ 1,064.00 │ 1,064.00 │   0.33 │
+│ Usage Prompt Cache Read Tokens (tokens) │       0.00 │     0.00 │     0.00 │     0.00 │     0.00 │     0.00 │   0.00 │
+│        Usage Completion Tokens (tokens) │     512.00 │   512.00 │   512.00 │   512.00 │   512.00 │   512.00 │   0.00 │
+│         Usage Reasoning Tokens (tokens) │     240.72 │    83.00 │   512.00 │   512.00 │   426.40 │   211.00 │ 110.41 │
+│             Usage Total Tokens (tokens) │   1,576.10 │ 1,576.00 │ 1,578.00 │ 1,577.00 │ 1,576.00 │ 1,576.00 │   0.33 │
+│      Total Usage Prompt Tokens (tokens) │ 327,742.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│    Total Usage Prompt Cache Read Tokens │       0.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│                                (tokens) │            │          │          │          │          │          │        │
+│       Overall Usage Prompt Cache Read % │       0.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│                                     (%) │            │          │          │          │          │          │        │
+│  Total Usage Completion Tokens (tokens) │ 157,696.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│   Total Usage Reasoning Tokens (tokens) │  74,141.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│       Total Usage Total Tokens (tokens) │ 485,438.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+└─────────────────────────────────────────┴────────────┴──────────┴──────────┴──────────┴──────────┴──────────┴────────┘
+                                                NVIDIA AIPerf | LLM Metrics                                                 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━┓
+┃                                        Metric ┃      avg ┃      min ┃      max ┃      p99 ┃      p90 ┃      p50 ┃    std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━┩
+│                      Time to First Token (ms) │   191.37 │   184.45 │   215.90 │   212.19 │   197.64 │   189.85 │   5.18 │
+│                     Time to Second Token (ms) │     4.73 │     3.42 │     6.90 │     5.78 │     5.33 │     4.96 │   0.66 │
+│               Time to First Output Token (ms) │ 1,798.12 │   803.65 │ 3,829.74 │ 3,789.25 │ 2,666.98 │ 1,671.48 │ 609.26 │
+│                          Request Latency (ms) │ 3,899.18 │ 3,888.77 │ 3,923.68 │ 3,916.17 │ 3,904.49 │ 3,898.36 │   4.83 │
+│                          Decode Duration (ms) │ 3,707.81 │ 3,700.45 │ 3,711.99 │ 3,711.36 │ 3,709.94 │ 3,708.38 │   2.12 │
+│                      Inter Token Latency (ms) │     7.26 │     7.24 │     7.26 │     7.26 │     7.26 │     7.26 │   0.00 │
+│              Output Token Throughput Per User │   137.82 │   137.66 │   138.09 │   138.04 │   137.94 │   137.80 │   0.08 │
+│                             (tokens/sec/user) │          │          │          │          │          │          │        │
+│ E2E Output Token Throughput (tokens/sec/user) │   131.31 │   130.49 │   131.66 │   131.58 │   131.44 │   131.34 │   0.16 │
+│               Output Sequence Length (tokens) │   512.00 │   512.00 │   512.00 │   512.00 │   512.00 │   512.00 │   0.00 │
+│                Input Sequence Length (tokens) │ 1,064.10 │ 1,064.00 │ 1,066.00 │ 1,065.00 │ 1,064.00 │ 1,064.00 │   0.33 │
+│          Output Token Throughput (tokens/sec) │   524.80 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│           Input Token Throughput (tokens/sec) │ 1,090.70 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│             Request Throughput (requests/sec) │     1.03 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+│                      Request Count (requests) │   308.00 │      N/A │      N/A │      N/A │      N/A │      N/A │    N/A │
+└───────────────────────────────────────────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴────────┘
+
+
+╭──────────────────────────────────────────── GPU Telemetry Platform ─────────────────────────────────────────────╮
+│  Platform: nvidia                                                                                               │
+│  Metric semantics are platform-specific; cross-platform comparisons require workload and collector validation.  │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+            GPU Power Efficiency (NVIDIA)             
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃                                Metric ┃        avg ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━┩
+│            Energy Delay Product (J*s) │   2,331.61 │
+│ Performance per Watt (requests/sec/W) │       0.00 │
+│     Output Tokens per Second per Watt │       0.86 │
+│                        (tokens/sec/W) │            │
+│                 Average GPU Power (W) │     612.93 │
+│                  Total GPU Energy (J) │ 184,176.42 │
+│                   Total GPU Power (W) │     611.98 │
+│     Energy per Total Token (mJ/token) │     379.40 │
+│    Energy per Output Token (mJ/token) │   1,167.92 │
+│   Energy per Request (joules/request) │     597.98 │
+│    Output Tokens per Joule (tokens/J) │       0.86 │
+│         Energy per User (joules/user) │  46,044.11 │
+└───────────────────────────────────────┴────────────┘
+
+
+                                   AIPerf | GPU Telemetry Summary                                   
+                                  1/1 telemetry sources reachable                                   
+                                           • localhost ✔                                            
+                                                                                                    
+                                  localhost | GPU 0 | NVIDIA GB300                                  
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━┓
+┃                         Metric ┃        avg ┃    min ┃    max ┃    p99 ┃    p90 ┃    p50 ┃   std ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━━╇━━━━━━━┩
+│     NVIDIA GPU Power Usage (W) │     611.96 │ 222.53 │ 648.75 │ 646.80 │ 642.26 │ 603.62 │ 23.18 │
+│ NVIDIA Energy Consumption (MJ) │       0.18 │    N/A │    N/A │    N/A │    N/A │    N/A │   N/A │
+│     NVIDIA GPU Utilization (%) │      97.25 │   0.00 │ 100.00 │ 100.00 │ 100.00 │ 100.00 │ 11.12 │
+│  NVIDIA Memory Utilization (%) │      47.53 │   0.00 │  50.00 │  50.00 │  50.00 │  49.00 │  6.72 │
+│    NVIDIA GPU Memory Used (GB) │     121.08 │ 121.08 │ 121.08 │ 121.08 │ 121.08 │ 121.08 │  0.00 │
+│    NVIDIA GPU Temperature (°C) │      59.59 │  51.00 │  66.00 │  64.19 │  60.00 │  59.50 │  1.00 │
+│      NVIDIA SM Utilization (%) │      46.79 │   0.00 │  50.25 │  49.46 │  47.37 │  47.31 │  2.78 │
+│ NVIDIA Decoder Utilization (%) │       0.00 │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │  0.00 │
+│ NVIDIA Encoder Utilization (%) │       0.00 │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │  0.00 │
+│    NVIDIA JPEG Utilization (%) │       0.00 │   0.00 │   0.00 │   0.00 │   0.00 │   0.00 │  0.00 │
+│    NVIDIA Power Violation (us) │ 167,686.69 │    N/A │    N/A │    N/A │    N/A │    N/A │   N/A │
+└────────────────────────────────┴────────────┴────────┴────────┴────────┴────────┴────────┴───────┘
