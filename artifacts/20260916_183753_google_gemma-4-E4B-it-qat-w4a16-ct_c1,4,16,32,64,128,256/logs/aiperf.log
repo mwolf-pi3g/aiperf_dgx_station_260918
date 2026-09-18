@@ -1,0 +1,204 @@
+2026-09-16 18:37:55.168 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-16 18:37:55.170 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-16 18:37:55.171 - aiperf.cli_runner._multi_run - INFO -   Configurations: 7
+2026-09-16 18:37:55.171 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 2
+2026-09-16 18:37:55.171 - aiperf.cli_runner._multi_run - INFO -   Total runs: 14
+2026-09-16 18:37:55.172 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-16 18:37:55.172 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 60.0s
+2026-09-16 18:37:55.172 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-16 18:37:55.173 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 5400s
+2026-09-16 18:37:55.174 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 2 trials x 7 variations
+2026-09-16 18:37:55.175 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-16 18:37:55.962 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 18:37:56.325 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it-qat-w4a16-ct "HTTP/1.1 200 OK"
+2026-09-16 18:37:56.331 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 18:37:56.332 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.4s
+2026-09-16 18:37:56.332 - aiperf.config.resolution.resolvers - INFO - Prefetching 1 tokenizer into HF cache...
+2026-09-16 18:37:57.369 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 18:37:57.570 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it-qat-w4a16-ct/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb/config.json?%2Fgoogle%2Fgemma-4-E4B-it-qat-w4a16-ct%2Fresolve%2Fmain%2Fconfig.json=&etag=%22cc8c5ca64e33c073a961fc35777c38badb2efd52%22 "HTTP/1.1 200 OK"
+2026-09-16 18:37:57.770 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it-qat-w4a16-ct/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb/config.json?%2Fgoogle%2Fgemma-4-E4B-it-qat-w4a16-ct%2Fresolve%2Fmain%2Fconfig.json=&etag=%22cc8c5ca64e33c073a961fc35777c38badb2efd52%22 "HTTP/1.1 200 OK"
+2026-09-16 18:37:57.992 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 18:37:58.192 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it-qat-w4a16-ct/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb/tokenizer_config.json?%2Fgoogle%2Fgemma-4-E4B-it-qat-w4a16-ct%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22b22e2c5c05597a7e8c0cb1cebdb7d45570772005%22 "HTTP/1.1 200 OK"
+2026-09-16 18:37:58.395 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it-qat-w4a16-ct/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb/tokenizer_config.json?%2Fgoogle%2Fgemma-4-E4B-it-qat-w4a16-ct%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22b22e2c5c05597a7e8c0cb1cebdb7d45570772005%22 "HTTP/1.1 200 OK"
+2026-09-16 18:37:58.632 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it-qat-w4a16-ct/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-16 18:37:58.852 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it-qat-w4a16-ct/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-16 18:37:59.064 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-09-16 18:37:59.265 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it-qat-w4a16-ct/xet-read-token/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb "HTTP/1.1 200 OK"
+2026-09-16 18:38:01.472 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-09-16 18:38:01.671 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-09-16 18:38:01.866 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it-qat-w4a16-ct/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 18:38:02.067 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it-qat-w4a16-ct/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb/chat_template.jinja?%2Fgoogle%2Fgemma-4-E4B-it-qat-w4a16-ct%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22fbe3b59b625cd1b8850ea592d4203df6ec04684b%22 "HTTP/1.1 200 OK"
+2026-09-16 18:38:02.274 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it-qat-w4a16-ct/6cd26aaa2357fb2bad8c51699a7558a4d1a965bb/chat_template.jinja?%2Fgoogle%2Fgemma-4-E4B-it-qat-w4a16-ct%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22fbe3b59b625cd1b8850ea592d4203df6ec04684b%22 "HTTP/1.1 200 OK"
+2026-09-16 18:38:03.397 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it-qat-w4a16-ct "HTTP/1.1 200 OK"
+2026-09-16 18:38:03.503 - aiperf.config.resolution.resolvers - INFO -   Cached google/gemma-4-E4B-it-qat-w4a16-ct (7.17s)
+2026-09-16 18:38:03.508 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer cached • 7.2s
+2026-09-16 18:43:11.903 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-16 18:43:12.696 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 18:43:12.705 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 18:43:12.705 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 18:43:12.706 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 18:48:21.621 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-16 18:48:22.417 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 18:48:22.426 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 18:48:22.426 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 18:48:22.427 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 18:53:30.899 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-16 18:53:31.683 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 18:53:31.691 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 18:53:31.692 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 18:53:31.692 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 18:58:39.995 - aiperf.orchestrator.orchestrator - INFO - [v4 t0] Executing run_0001...
+2026-09-16 18:58:40.791 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 18:58:40.800 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 18:58:40.800 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 18:58:40.801 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:03:49.772 - aiperf.orchestrator.orchestrator - INFO - [v5 t0] Executing run_0001...
+2026-09-16 19:03:50.558 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:03:50.567 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:03:50.567 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:03:50.568 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:08:58.759 - aiperf.orchestrator.orchestrator - INFO - [v6 t0] Executing run_0001...
+2026-09-16 19:08:59.545 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:08:59.553 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:08:59.553 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:08:59.554 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:14:21.105 - aiperf.orchestrator.orchestrator - INFO - Inter-trial cooldown: 60.0s
+2026-09-16 19:15:21.167 - aiperf.orchestrator.orchestrator - INFO - [v0 t1] Executing run_0002...
+2026-09-16 19:15:21.976 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:15:21.984 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:15:21.985 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:15:21.985 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:20:30.725 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:20:30.727 - aiperf.orchestrator.orchestrator - INFO - [v1 t1] Executing run_0002...
+2026-09-16 19:20:31.540 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:20:31.549 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:20:31.550 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:20:31.550 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:25:41.233 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:25:41.235 - aiperf.orchestrator.orchestrator - INFO - [v2 t1] Executing run_0002...
+2026-09-16 19:25:42.047 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:25:42.056 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:25:42.057 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:25:42.057 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:30:51.397 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:30:51.399 - aiperf.orchestrator.orchestrator - INFO - [v3 t1] Executing run_0002...
+2026-09-16 19:30:52.194 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:30:52.202 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:30:52.202 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:30:52.203 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:36:01.880 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:36:01.882 - aiperf.orchestrator.orchestrator - INFO - [v4 t1] Executing run_0002...
+2026-09-16 19:36:02.653 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:36:02.661 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:36:02.661 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:36:02.662 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:41:14.148 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:41:14.151 - aiperf.orchestrator.orchestrator - INFO - [v5 t1] Executing run_0002...
+2026-09-16 19:41:14.928 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:41:14.937 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:41:14.937 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:41:14.937 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:46:26.873 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:46:26.876 - aiperf.orchestrator.orchestrator - INFO - [v6 t1] Executing run_0002...
+2026-09-16 19:46:27.631 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-16 19:46:27.639 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer google/gemma-4-E4B-it-qat-w4a16-ct detected
+2026-09-16 19:46:27.640 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-16 19:46:27.640 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['google/gemma-4-E4B-it-qat-w4a16-ct']
+2026-09-16 19:52:05.398 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                           256                                                                                                2  
+                                                                                                                                 
+
+2026-09-16 19:52:05.401 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 14/14 runs successful
+2026-09-16 19:52:05.403 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-16 19:52:05.403 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-16 19:52:05.404 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-16 19:52:05.641 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.642 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.642 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=1) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.665 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-16 19:52:05.666 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-16 19:52:05.667 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-16 19:52:05.667 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-16 19:52:05.668 - aiperf.cli_runner._multi_run - INFO - 
+2026-09-16 19:52:05.668 - aiperf.cli_runner._multi_run - INFO - Best Configurations:
+2026-09-16 19:52:05.668 - aiperf.cli_runner._multi_run - INFO -   Best throughput: concurrency=128 (23.10 requests/sec)
+2026-09-16 19:52:05.669 - aiperf.cli_runner._multi_run - INFO -   Best latency (p99): concurrency=1 (34.83 ms)
+2026-09-16 19:52:05.669 - aiperf.cli_runner._multi_run - INFO -   Pareto optimal points: [{'concurrency': 1}, {'concurrency': 4}, {'concurrency': 16}, {'concurrency': 32}, {'concurrency': 64}, {'concurrency': 128}]
+2026-09-16 19:52:05.677 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.677 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.678 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=4) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.708 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.708 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.709 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=16) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.738 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.739 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.740 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.769 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.770 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.770 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=64) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.800 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.800 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.801 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=128) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.830 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
+2026-09-16 19:52:05.831 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json
+2026-09-16 19:52:05.831 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=256) JSON: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260916_183753_google_gemma-4-E4B-it-qat-w4a16-ct_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
