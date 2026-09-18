@@ -1,0 +1,134 @@
+2026-09-17 18:44:23.192 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 18:44:23.193 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-17 18:44:23.194 - aiperf.cli_runner._multi_run - INFO -   Configurations: 5
+2026-09-17 18:44:23.194 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 2
+2026-09-17 18:44:23.194 - aiperf.cli_runner._multi_run - INFO -   Total runs: 10
+2026-09-17 18:44:23.194 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-17 18:44:23.195 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 60.0s
+2026-09-17 18:44:23.195 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 18:44:23.195 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 3840s
+2026-09-17 18:44:23.197 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 2 trials x 5 variations
+2026-09-17 18:44:23.198 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-17 18:44:23.971 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 18:44:23.985 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 18:44:23.986 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 18:44:23.986 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 18:49:34.296 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-17 18:49:35.096 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 18:49:35.104 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 18:49:35.105 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 18:49:35.105 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 18:54:48.223 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-17 18:54:49.007 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 18:54:49.015 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 18:54:49.016 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 18:54:49.016 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:00:08.907 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-17 19:00:09.683 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:00:09.691 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:00:09.692 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:00:09.692 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:05:19.040 - aiperf.orchestrator.orchestrator - INFO - [v4 t0] Executing run_0001...
+2026-09-17 19:05:19.819 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:05:19.828 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:05:19.828 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:05:19.829 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:10:49.134 - aiperf.orchestrator.orchestrator - INFO - Inter-trial cooldown: 60.0s
+2026-09-17 19:11:49.137 - aiperf.orchestrator.orchestrator - INFO - [v0 t1] Executing run_0002...
+2026-09-17 19:11:49.915 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:11:49.924 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:11:49.924 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:11:49.924 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:16:58.463 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 19:16:58.465 - aiperf.orchestrator.orchestrator - INFO - [v1 t1] Executing run_0002...
+2026-09-17 19:16:59.248 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:16:59.257 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:16:59.257 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:16:59.258 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:22:12.100 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 19:22:12.102 - aiperf.orchestrator.orchestrator - INFO - [v2 t1] Executing run_0002...
+2026-09-17 19:22:12.883 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:22:12.891 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:22:12.892 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:22:12.892 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:27:34.770 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 19:27:34.772 - aiperf.orchestrator.orchestrator - INFO - [v3 t1] Executing run_0002...
+2026-09-17 19:27:35.551 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:27:35.559 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:27:35.560 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:27:35.560 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:32:45.082 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 19:32:45.085 - aiperf.orchestrator.orchestrator - INFO - [v4 t1] Executing run_0002...
+2026-09-17 19:32:45.872 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 19:32:45.880 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer MiniMaxAI/MiniMax-M2.7 detected
+2026-09-17 19:32:45.881 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 19:32:45.881 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['MiniMaxAI/MiniMax-M2.7']
+2026-09-17 19:38:15.435 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 19:38:15.438 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 10/10 runs successful
+2026-09-17 19:38:15.439 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 19:38:15.440 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 19:38:15.440 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-17 19:38:15.598 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_1/profile_export_aiperf_aggregate.json
+2026-09-17 19:38:15.598 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.599 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 19:38:15.600 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=1) JSON: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_1/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.622 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 19:38:15.623 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 19:38:15.623 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 19:38:15.624 - aiperf.cli_runner._multi_run - INFO - 
+2026-09-17 19:38:15.624 - aiperf.cli_runner._multi_run - INFO - Best Configurations:
+2026-09-17 19:38:15.624 - aiperf.cli_runner._multi_run - INFO -   Best throughput: concurrency=64 (1.59 requests/sec)
+2026-09-17 19:38:15.624 - aiperf.cli_runner._multi_run - INFO -   Best latency (p99): concurrency=1 (151.01 ms)
+2026-09-17 19:38:15.625 - aiperf.cli_runner._multi_run - INFO -   Pareto optimal points: [{'concurrency': 1}, {'concurrency': 4}, {'concurrency': 16}, {'concurrency': 32}, {'concurrency': 64}]
+2026-09-17 19:38:15.632 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.633 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_4/profile_export_aiperf_aggregate.json
+2026-09-17 19:38:15.633 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=4) JSON: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_4/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.662 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.663 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_16/profile_export_aiperf_aggregate.json
+2026-09-17 19:38:15.663 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=16) JSON: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_16/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.692 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-17 19:38:15.692 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.693 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.722 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 19:38:15.722 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_64/profile_export_aiperf_aggregate.json
+2026-09-17 19:38:15.723 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=64) JSON: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_64/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_184420_MiniMaxAI_MiniMax-M2.7_c1,4,16,32,64/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
