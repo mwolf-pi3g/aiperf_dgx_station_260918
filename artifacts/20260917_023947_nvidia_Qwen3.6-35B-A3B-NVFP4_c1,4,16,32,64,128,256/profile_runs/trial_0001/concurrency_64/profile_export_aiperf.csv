@@ -1,0 +1,95 @@
+Metric,avg,min,max,sum,p1,p5,p10,p25,p50,p75,p90,p95,p99,std
+Active Decode Throughput (tokens/sec),6170.57,0.00,24607.09,,,,,,5724.00,,11179.78,11532.73,12203.24,3684.21
+Active Decode Throughput Per User (tokens/sec/user),97.31,0.00,466.17,,,,,,89.53,,174.70,180.24,190.87,56.35
+Active Prefill Throughput (tokens/sec),58294.04,893.09,90678.29,,,,,,55904.68,,88666.06,89579.55,90124.44,28467.22
+Active Prefill Throughput Per User (tokens/sec/user),1230.90,888.03,3406.46,,,,,,1167.50,,1394.17,1407.95,2926.95,287.30
+Active Total Throughput (tokens/sec),17660.91,100.19,90678.29,,,,,,6862.29,,57561.74,87211.67,89579.55,24541.17
+Credit-to-Start Latency (ms),2.13,0.45,34.04,7345.33,0.52,0.61,0.86,1.32,1.82,3.09,3.40,3.54,3.90,1.27
+Decode Duration (ms),4780.64,4478.08,5359.15,16521886.77,4490.65,4497.56,4502.41,4521.34,4696.11,4968.03,5087.57,5097.51,5249.97,226.55
+E2E Output Token Throughput (tokens/sec/user),91.39,89.36,92.32,315846.79,89.87,90.72,91.03,91.26,91.42,91.60,91.75,91.83,92.19,0.36
+Effective Concurrency,63.95,0.00,64.00,,,,,,64.00,,64.00,64.00,64.00,1.29
+Effective Decode Concurrency,54.57,0.00,64.00,,,,,,64.00,,64.00,64.00,64.00,20.40
+Effective Decode Throughput (tokens/sec),5833.20,0.00,24607.09,,,,,,5454.49,,11145.54,11508.07,12166.14,3846.97
+Effective Decode Throughput Per User (tokens/sec/user),91.99,0.00,466.17,,,,,,85.29,,174.19,179.86,190.42,59.08
+Effective Latency (CO-aware) (ms),5604.54,5548.91,5730.96,19369290.09,5556.17,5577.65,5582.52,5591.45,5602.29,5612.02,5627.22,5644.99,5698.33,21.88
+Effective Prefill Concurrency,9.38,0.00,64.00,,,,,,0.00,,48.00,64.00,64.00,20.35
+Effective Prefill Throughput (tokens/sec),11827.49,0.00,90678.29,,,,,,0.00,,55953.09,87114.27,89579.55,26720.85
+Effective Prefill Throughput Per User (tokens/sec/user),249.74,0.00,3406.46,,,,,,0.00,,1168.83,1375.97,1407.95,511.65
+Effective Total Throughput (tokens/sec),17660.69,0.00,90678.29,,,,,,6862.29,,57561.74,87211.67,89579.55,24541.09
+HTTP Blocked (ms),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+HTTP Chunks Received,339.63,304.00,369.00,1173761.00,320.00,322.00,324.00,333.00,340.00,346.00,354.00,357.00,367.00,10.68
+HTTP Chunks Sent,1.00,1.00,1.00,3456.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00
+HTTP Connecting (ms),0.04,0.00,24.57,149.85,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.66,0.67
+HTTP Connection Overhead (ms),0.06,0.00,32.62,202.76,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.66,0.87
+HTTP Connection Reused (ratio),0.98,0.00,1.00,3392.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.13
+HTTP Data Received (KB),87.67,78.69,95.25,302981.12,82.66,83.25,83.84,86.03,87.64,89.31,91.22,92.05,94.59,2.67
+HTTP Data Sent (KB),4.64,4.14,4.95,16040.77,4.22,4.39,4.47,4.55,4.63,4.73,4.85,4.89,4.93,0.15
+HTTP DNS Lookup (ms),0.02,0.00,15.75,52.91,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.29
+HTTP Duration (excl. conn) (ms),5602.36,5546.15,5729.29,19361771.47,5553.54,5575.70,5580.06,5589.58,5600.34,5610.15,5624.73,5643.78,5697.23,21.95
+HTTP Receiving (ms),4780.66,4478.08,5359.18,16521954.76,4490.66,4497.57,4502.42,4521.34,4696.11,4968.03,5087.58,5097.51,5249.97,226.55
+HTTP Sending (ms),0.16,0.06,24.78,539.48,0.07,0.07,0.07,0.08,0.13,0.14,0.15,0.15,0.79,0.68
+HTTP Total Time (ms),5602.42,5546.15,5730.15,19361974.23,5553.54,5575.70,5580.06,5589.58,5600.34,5610.15,5624.73,5643.78,5699.51,22.21
+HTTP Waiting (TTFB) (ms),821.55,273.92,1170.19,2839277.23,348.46,500.79,510.56,675.65,915.08,1084.12,1092.94,1098.85,1152.02,226.40
+Input Sequence Length (tokens),1036.11,1035.00,1037.00,3580799.00,1035.00,1036.00,1036.00,1036.00,1036.00,1036.00,1037.00,1037.00,1037.00,0.37
+Inter Chunk Latency (ms),14.12,3.89,329.88,16521886.77,6.94,8.30,8.48,8.73,10.97,17.00,22.61,25.19,29.79,13.09
+Inter Token Latency (ms),9.36,8.76,10.49,32332.46,8.79,8.80,8.81,8.85,9.19,9.72,9.96,9.98,10.27,0.44
+OSL Mismatch Diff % (%),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Output Sequence Length (tokens),512.00,512.00,512.00,1769472.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,0.00
+Output Token Count (tokens),512.00,512.00,512.00,1769472.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,0.00
+Output Token Throughput Per User (tokens/sec/user),107.13,95.35,114.11,370234.22,97.33,100.25,100.44,102.87,108.81,113.02,113.49,113.62,113.79,5.04
+Prefill Throughput Per User (tokens/sec/user),1380.01,883.82,3773.39,4769306.85,899.24,942.73,947.84,955.70,1132.13,1541.23,2028.70,2068.33,2971.86,451.60
+Reasoning Token Count (tokens),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Request Latency (ms),5602.40,5546.20,5729.35,19361882.66,5553.60,5575.73,5580.11,5589.61,5600.37,5610.19,5624.78,5643.83,5697.35,21.95
+Time to First Output Token (ms),821.76,274.82,1173.32,2839995.89,348.65,500.96,510.77,675.78,915.26,1084.24,1093.06,1098.99,1152.13,226.41
+Time to First Token (ms),821.76,274.82,1173.32,2839995.89,348.65,500.96,510.77,675.78,915.26,1084.24,1093.06,1098.99,1152.13,226.41
+Time to Second Token (ms),143.69,3.89,329.88,496579.83,4.50,6.05,6.23,7.20,174.95,208.75,211.07,214.16,243.29,88.20
+Tokens In Flight (tokens),82389.22,0.00,98984.55,,,,,,84331.30,,96945.39,98014.94,98776.84,11653.82
+Usage Completion Tokens (tokens),512.00,512.00,512.00,1769472.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,512.00,0.00
+Usage Prompt Cache Read Tokens (tokens),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Usage Prompt Tokens (tokens),1036.11,1035.00,1037.00,3580799.00,1035.00,1036.00,1036.00,1036.00,1036.00,1036.00,1037.00,1037.00,1037.00,0.37
+Usage Reasoning Tokens (tokens),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Usage Total Tokens (tokens),1548.11,1547.00,1549.00,5350271.00,1547.00,1548.00,1548.00,1548.00,1548.00,1548.00,1549.00,1549.00,1549.00,0.37
+
+Metric,Value
+Benchmark Duration (sec),302.75
+Input Token Throughput (tokens/sec),11827.49
+Average GPU Power (W),719.58
+Energy Delay Product (J*s),353.15
+Energy per Output Token (mJ/token),123.12
+Energy per Request (joules/request),63.04
+Energy per Total Token (mJ/token),40.72
+Energy per User (joules/user),3403.95
+Output Tokens per Joule (tokens/J),8.12
+Output Tokens per Second per Watt (tokens/sec/W),8.12
+Performance per Watt (requests/sec/W),0.02
+Total GPU Energy (J),217853.03
+Total GPU Power (W),718.35
+OSL Mismatch Count,0.00
+Output Token Throughput (tokens/sec),5844.62
+Overall Usage Prompt Cache Read % (%),0.00
+Request Count,3456.00
+Request Throughput (requests/sec),11.42
+Total Input Sequence Length (tokens),3580799.00
+Total Output Sequence Length (tokens),1769472.00
+Total Output Tokens (tokens),1769472.00
+Total Reasoning Tokens (tokens),0.00
+Total Token Throughput (tokens/sec),17672.11
+Total Usage Completion Tokens (tokens),1769472.00
+Total Usage Prompt Cache Read Tokens (tokens),0.00
+Total Usage Prompt Tokens (tokens),3580799.00
+Total Usage Reasoning Tokens (tokens),0.00
+Total Usage Total Tokens (tokens),5350271.00
+
+
+Endpoint,GPU_Index,GPU_Name,GPU_UUID,Platform,Metric,avg,min,max,sum,p1,p5,p10,p25,p50,p75,p90,p95,p99,std,Hostname
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA GPU Power Usage (W),718.32,222.53,880.57,637864.68,615.00,641.95,679.07,705.34,708.56,712.12,797.94,840.07,871.61,54.46,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA Energy Consumption (MJ),0.22,,,,,,,,,,,,,,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA GPU Utilization (%),96.26,0.00,100.00,85475.00,11.61,76.00,100.00,100.00,100.00,100.00,100.00,100.00,100.00,16.75,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA Memory Utilization (%),35.47,0.00,41.00,31496.00,2.00,22.00,23.70,38.75,40.00,40.00,40.00,40.00,40.00,9.13,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA GPU Memory Used (GB),110.51,110.51,110.51,98130.62,110.51,110.51,110.51,110.51,110.51,110.51,110.51,110.51,110.51,0.00,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA GPU Temperature (°C),63.07,51.00,67.00,56007.00,59.00,61.00,62.00,63.00,63.00,63.00,65.00,66.00,67.00,1.57,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA SM Utilization (%),76.59,0.00,95.21,68008.09,28.69,49.85,76.08,76.88,77.07,77.20,92.17,95.07,95.16,11.53,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA Decoder Utilization (%),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA Encoder Utilization (%),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA JPEG Utilization (%),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,localhost
+localhost,0,NVIDIA GB300,GPU-1e5009a9-d3f3-9d30-1e4c-d6e0cebcce9b,nvidia,NVIDIA Power Violation (us),0.00,,,,,,,,,,,,,,localhost

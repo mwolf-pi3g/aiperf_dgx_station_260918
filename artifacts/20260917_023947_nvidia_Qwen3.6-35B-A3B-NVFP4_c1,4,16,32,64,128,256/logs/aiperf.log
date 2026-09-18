@@ -1,0 +1,210 @@
+2026-09-17 02:39:50.074 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 02:39:50.077 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-17 02:39:50.077 - aiperf.cli_runner._multi_run - INFO -   Configurations: 7
+2026-09-17 02:39:50.077 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 2
+2026-09-17 02:39:50.078 - aiperf.cli_runner._multi_run - INFO -   Total runs: 14
+2026-09-17 02:39:50.078 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-17 02:39:50.078 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 60.0s
+2026-09-17 02:39:50.079 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 02:39:50.079 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 5400s
+2026-09-17 02:39:50.081 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 2 trials x 7 variations
+2026-09-17 02:39:50.082 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-17 02:39:50.854 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 02:39:51.195 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Qwen3.6-35B-A3B-NVFP4 "HTTP/1.1 200 OK"
+2026-09-17 02:39:51.199 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 02:39:51.200 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.3s
+2026-09-17 02:39:51.200 - aiperf.config.resolution.resolvers - INFO - Prefetching 1 tokenizer into HF cache...
+2026-09-17 02:39:52.237 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 02:39:52.444 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/config.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ec1f82c006fd5db6d0b5fa1a59e16fbda9a5c1dd%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:52.643 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/config.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ec1f82c006fd5db6d0b5fa1a59e16fbda9a5c1dd%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:52.865 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 02:39:53.062 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/tokenizer_config.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%2228d96ff303d1d20350185caf4bf037045916ed35%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:53.259 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/tokenizer_config.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%2228d96ff303d1d20350185caf4bf037045916ed35%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:53.456 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 02:39:53.500 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/tokenizer_config.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%2228d96ff303d1d20350185caf4bf037045916ed35%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:53.702 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Qwen3.6-35B-A3B-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 02:39:53.910 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Qwen3.6-35B-A3B-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 02:39:54.105 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 02:39:54.310 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/vocab.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Fvocab.json=&etag=%220aa0ce0658d60ac4a5d609f4eadb0e8e43514176%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:54.543 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/vocab.json?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Fvocab.json=&etag=%220aa0ce0658d60ac4a5d609f4eadb0e8e43514176%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:55.080 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/merges.txt "HTTP/1.1 404 Not Found"
+2026-09-17 02:39:55.285 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-09-17 02:39:55.481 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Qwen3.6-35B-A3B-NVFP4/xet-read-token/1355db6a052410cfd62085d94b58866fd0f2c3c5 "HTTP/1.1 200 OK"
+2026-09-17 02:39:57.748 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-09-17 02:39:57.950 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-09-17 02:39:58.145 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 02:39:58.351 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/chat_template.jinja?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22a8755d827c0a7b614c246c4060dfd58ab352a8ff%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:58.552 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/nvidia/Qwen3.6-35B-A3B-NVFP4/1355db6a052410cfd62085d94b58866fd0f2c3c5/chat_template.jinja?%2Fnvidia%2FQwen3.6-35B-A3B-NVFP4%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22a8755d827c0a7b614c246c4060dfd58ab352a8ff%22 "HTTP/1.1 200 OK"
+2026-09-17 02:39:59.054 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/Qwen3.6-35B-A3B-NVFP4 "HTTP/1.1 200 OK"
+2026-09-17 02:39:59.121 - aiperf.config.resolution.resolvers - INFO -   Cached nvidia/Qwen3.6-35B-A3B-NVFP4 (7.92s)
+2026-09-17 02:39:59.125 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer cached • 7.9s
+2026-09-17 02:45:07.555 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-17 02:45:08.338 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 02:45:08.347 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 02:45:08.347 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 02:45:08.348 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 02:50:18.281 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-17 02:50:19.065 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 02:50:19.073 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 02:50:19.074 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 02:50:19.074 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 02:55:29.290 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-17 02:55:30.051 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 02:55:30.059 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 02:55:30.059 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 02:55:30.060 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:00:39.974 - aiperf.orchestrator.orchestrator - INFO - [v4 t0] Executing run_0001...
+2026-09-17 03:00:40.734 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:00:40.742 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:00:40.743 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:00:40.743 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:05:51.990 - aiperf.orchestrator.orchestrator - INFO - [v5 t0] Executing run_0001...
+2026-09-17 03:05:52.769 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:05:52.778 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:05:52.778 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:05:52.779 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:11:02.553 - aiperf.orchestrator.orchestrator - INFO - [v6 t0] Executing run_0001...
+2026-09-17 03:11:03.332 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:11:03.341 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:11:03.364 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:11:03.365 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:16:28.472 - aiperf.orchestrator.orchestrator - INFO - Inter-trial cooldown: 60.0s
+2026-09-17 03:17:28.533 - aiperf.orchestrator.orchestrator - INFO - [v0 t1] Executing run_0002...
+2026-09-17 03:17:29.320 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:17:29.329 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:17:29.329 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:17:29.330 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:22:38.273 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:22:38.275 - aiperf.orchestrator.orchestrator - INFO - [v1 t1] Executing run_0002...
+2026-09-17 03:22:39.097 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:22:39.106 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:22:39.106 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:22:39.107 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:27:47.471 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:27:47.473 - aiperf.orchestrator.orchestrator - INFO - [v2 t1] Executing run_0002...
+2026-09-17 03:27:48.268 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:27:48.277 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:27:48.277 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:27:48.278 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:32:58.261 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:32:58.263 - aiperf.orchestrator.orchestrator - INFO - [v3 t1] Executing run_0002...
+2026-09-17 03:32:59.034 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:32:59.042 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:32:59.043 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:32:59.043 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:38:08.922 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:38:08.924 - aiperf.orchestrator.orchestrator - INFO - [v4 t1] Executing run_0002...
+2026-09-17 03:38:09.707 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:38:09.715 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:38:09.716 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:38:09.716 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:43:21.158 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:43:21.161 - aiperf.orchestrator.orchestrator - INFO - [v5 t1] Executing run_0002...
+2026-09-17 03:43:21.917 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:43:21.925 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:43:21.925 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:43:21.926 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:48:31.889 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:48:31.893 - aiperf.orchestrator.orchestrator - INFO - [v6 t1] Executing run_0002...
+2026-09-17 03:48:32.675 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 03:48:32.684 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer nvidia/Qwen3.6-35B-A3B-NVFP4 detected
+2026-09-17 03:48:32.684 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 03:48:32.685 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['nvidia/Qwen3.6-35B-A3B-NVFP4']
+2026-09-17 03:53:54.679 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                           256                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 03:53:54.682 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 14/14 runs successful
+2026-09-17 03:53:54.683 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 03:53:54.684 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 03:53:54.684 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-17 03:53:54.915 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:54.916 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:54.916 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=1) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:54.938 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 03:53:54.939 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 03:53:54.939 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 03:53:54.940 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 03:53:54.940 - aiperf.cli_runner._multi_run - INFO - 
+2026-09-17 03:53:54.941 - aiperf.cli_runner._multi_run - INFO - Best Configurations:
+2026-09-17 03:53:54.941 - aiperf.cli_runner._multi_run - INFO -   Best throughput: concurrency=128 (15.29 requests/sec)
+2026-09-17 03:53:54.941 - aiperf.cli_runner._multi_run - INFO -   Best latency (p99): concurrency=1 (139.91 ms)
+2026-09-17 03:53:54.941 - aiperf.cli_runner._multi_run - INFO -   Pareto optimal points: [{'concurrency': 1}, {'concurrency': 4}, {'concurrency': 16}, {'concurrency': 32}, {'concurrency': 64}, {'concurrency': 128}]
+2026-09-17 03:53:54.949 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:54.949 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:54.950 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=4) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:54.979 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:54.979 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:54.980 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=16) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.009 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.009 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:55.010 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.038 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.039 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:55.040 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=64) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.068 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.069 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:55.070 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=128) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.099 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json
+2026-09-17 03:53:55.099 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
+2026-09-17 03:53:55.100 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=256) JSON: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_023947_nvidia_Qwen3.6-35B-A3B-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
