@@ -1,0 +1,212 @@
+2026-09-17 08:31:32.230 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 08:31:32.233 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-17 08:31:32.234 - aiperf.cli_runner._multi_run - INFO -   Configurations: 7
+2026-09-17 08:31:32.234 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 2
+2026-09-17 08:31:32.235 - aiperf.cli_runner._multi_run - INFO -   Total runs: 14
+2026-09-17 08:31:32.235 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-17 08:31:32.235 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 60.0s
+2026-09-17 08:31:32.236 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 08:31:32.236 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 5400s
+2026-09-17 08:31:32.237 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 2 trials x 7 variations
+2026-09-17 08:31:32.238 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-17 08:31:33.021 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 08:31:33.385 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/RadixArk/Qwen3.8-Flash-Next-NVFP4 "HTTP/1.1 200 OK"
+2026-09-17 08:31:33.392 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 08:31:33.392 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.4s
+2026-09-17 08:31:33.393 - aiperf.config.resolution.resolvers - INFO - Prefetching 1 tokenizer into HF cache...
+2026-09-17 08:31:34.436 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 08:31:34.641 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/config.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac690fbadfabbba25b73b526880ed1ceea70b14e%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:34.844 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/config.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fconfig.json=&etag=%22ac690fbadfabbba25b73b526880ed1ceea70b14e%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:35.086 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 08:31:35.294 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/tokenizer_config.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%225de744b3fca2129d7186979ae47c06be33903243%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:35.494 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/tokenizer_config.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%225de744b3fca2129d7186979ae47c06be33903243%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:35.697 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 08:31:35.739 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/tokenizer_config.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%225de744b3fca2129d7186979ae47c06be33903243%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:35.938 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 08:31:36.148 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 08:31:36.386 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 08:31:36.594 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/vocab.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fvocab.json=&etag=%220aa0ce0658d60ac4a5d609f4eadb0e8e43514176%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:36.816 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/vocab.json?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fvocab.json=&etag=%220aa0ce0658d60ac4a5d609f4eadb0e8e43514176%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:37.652 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 08:31:37.854 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/merges.txt?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fmerges.txt=&etag=%22a494e019ca1502219fd0128658b979e5f05ae8e8%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:38.072 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/merges.txt?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fmerges.txt=&etag=%22a494e019ca1502219fd0128658b979e5f05ae8e8%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:38.547 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-09-17 08:31:38.773 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/xet-read-token/7b719225242aacd3dbd3f9407468c2ee9a9d2594 "HTTP/1.1 200 OK"
+2026-09-17 08:31:41.190 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-09-17 08:31:41.403 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-09-17 08:31:41.597 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 08:31:41.805 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/chat_template.jinja?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22c0c686f9c38d70d179fb7b5f5aa7530bc913dda3%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:42.010 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/RadixArk/Qwen3.8-Flash-Next-NVFP4/7b719225242aacd3dbd3f9407468c2ee9a9d2594/chat_template.jinja?%2FRadixArk%2FQwen3.8-Flash-Next-NVFP4%2Fresolve%2Fmain%2Fchat_template.jinja=&etag=%22c0c686f9c38d70d179fb7b5f5aa7530bc913dda3%22 "HTTP/1.1 200 OK"
+2026-09-17 08:31:42.508 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/RadixArk/Qwen3.8-Flash-Next-NVFP4 "HTTP/1.1 200 OK"
+2026-09-17 08:31:42.572 - aiperf.config.resolution.resolvers - INFO -   Cached RadixArk/Qwen3.8-Flash-Next-NVFP4 (9.17s)
+2026-09-17 08:31:42.576 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer cached • 9.2s
+2026-09-17 08:36:50.697 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-17 08:36:51.481 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 08:36:51.489 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 08:36:51.490 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 08:36:51.490 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 08:42:01.213 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-17 08:42:01.990 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 08:42:01.999 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 08:42:01.999 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 08:42:02.000 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 08:47:14.342 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-17 08:47:15.129 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 08:47:15.138 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 08:47:15.138 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 08:47:15.139 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 08:52:27.346 - aiperf.orchestrator.orchestrator - INFO - [v4 t0] Executing run_0001...
+2026-09-17 08:52:28.132 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 08:52:28.141 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 08:52:28.141 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 08:52:28.142 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 08:57:43.131 - aiperf.orchestrator.orchestrator - INFO - [v5 t0] Executing run_0001...
+2026-09-17 08:57:43.914 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 08:57:43.923 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 08:57:43.923 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 08:57:43.924 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:03:12.524 - aiperf.orchestrator.orchestrator - INFO - [v6 t0] Executing run_0001...
+2026-09-17 09:03:13.300 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:03:13.308 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:03:13.308 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:03:13.309 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:08:51.462 - aiperf.orchestrator.orchestrator - INFO - Inter-trial cooldown: 60.0s
+2026-09-17 09:09:51.524 - aiperf.orchestrator.orchestrator - INFO - [v0 t1] Executing run_0002...
+2026-09-17 09:09:52.310 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:09:52.318 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:09:52.318 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:09:52.319 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:15:00.232 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:15:00.235 - aiperf.orchestrator.orchestrator - INFO - [v1 t1] Executing run_0002...
+2026-09-17 09:15:01.039 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:15:01.048 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:15:01.049 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:15:01.049 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:20:10.324 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:20:10.327 - aiperf.orchestrator.orchestrator - INFO - [v2 t1] Executing run_0002...
+2026-09-17 09:20:11.133 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:20:11.141 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:20:11.142 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:20:11.143 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:25:23.488 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:25:23.490 - aiperf.orchestrator.orchestrator - INFO - [v3 t1] Executing run_0002...
+2026-09-17 09:25:24.278 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:25:24.286 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:25:24.286 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:25:24.287 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:30:36.522 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:30:36.525 - aiperf.orchestrator.orchestrator - INFO - [v4 t1] Executing run_0002...
+2026-09-17 09:30:37.300 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:30:37.309 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:30:37.309 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:30:37.310 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:35:53.811 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:35:53.814 - aiperf.orchestrator.orchestrator - INFO - [v5 t1] Executing run_0002...
+2026-09-17 09:35:54.588 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:35:54.596 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:35:54.597 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:35:54.597 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:41:20.928 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:41:20.931 - aiperf.orchestrator.orchestrator - INFO - [v6 t1] Executing run_0002...
+2026-09-17 09:41:21.692 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 09:41:21.700 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer RadixArk/Qwen3.8-Flash-Next-NVFP4 detected
+2026-09-17 09:41:21.701 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 09:41:21.701 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['RadixArk/Qwen3.8-Flash-Next-NVFP4']
+2026-09-17 09:46:59.948 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                            64                                                                                                2  
+                           128                                                                                                2  
+                           256                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 09:46:59.951 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 14/14 runs successful
+2026-09-17 09:46:59.953 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 09:46:59.953 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 09:46:59.953 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-17 09:47:00.164 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.164 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.165 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 09:47:00.165 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=1) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.187 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 09:47:00.188 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 09:47:00.189 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 09:47:00.189 - aiperf.cli_runner._multi_run - INFO - 
+2026-09-17 09:47:00.189 - aiperf.cli_runner._multi_run - INFO - Best Configurations:
+2026-09-17 09:47:00.190 - aiperf.cli_runner._multi_run - INFO -   Best throughput: concurrency=32 (5.26 requests/sec)
+2026-09-17 09:47:00.190 - aiperf.cli_runner._multi_run - INFO -   Best latency (p99): concurrency=1 (173.23 ms)
+2026-09-17 09:47:00.190 - aiperf.cli_runner._multi_run - INFO -   Pareto optimal points: [{'concurrency': 1}, {'concurrency': 16}, {'concurrency': 32}]
+2026-09-17 09:47:00.197 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.198 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.199 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=4) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.228 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.228 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.229 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=16) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.258 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.258 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.259 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.288 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.289 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.289 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=64) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_64/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.319 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.319 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.320 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=128) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_128/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.349 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json
+2026-09-17 09:47:00.349 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
+2026-09-17 09:47:00.350 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=256) JSON: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_083130_RadixArk_Qwen3.8-Flash-Next-NVFP4_c1,4,16,32,64,128,256/aggregate/concurrency_256/profile_export_aiperf_aggregate.csv
