@@ -1,0 +1,75 @@
+2026-09-16 17:54:39.016 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-09-16 17:54:39.027 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-09-16 17:54:39.029 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-09-16 17:54:39.041 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-09-16 17:54:39.043 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-09-16 17:54:39.048 - GPUTelemetryJSONLWriter_057adfee - INFO - GPU telemetry export enabled: /root/llm_perf/artifacts/20260916_171715_google_gemma-4-E4B-it_c1,4,16,32,64,128,256/profile_runs/trial_0002/concurrency_1/gpu_telemetry_export.jsonl
+2026-09-16 17:54:39.054 - OTelMetricsResultsProcessor_3a1e6470 - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-09-16 17:54:39.055 - RecordExportJSONLWriter_fa51e224 - INFO - Record metrics export enabled: /root/llm_perf/artifacts/20260916_171715_google_gemma-4-E4B-it_c1,4,16,32,64,128,256/profile_runs/trial_0002/concurrency_1/profile_export.jsonl
+2026-09-16 17:54:39.074 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-09-16 17:54:39.113 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-09-16 17:54:39.123 - system_controller - INFO - Registered Worker (id: 'worker_c1fd2e37')
+2026-09-16 17:54:39.151 - system_controller - INFO - Registered Record Processor (id: 'record_processor_934be808')
+2026-09-16 17:54:39.513 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-09-16 17:54:39.513 - system_controller - INFO - Configuring all services to start profiling
+2026-09-16 17:54:39.514 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-09-16 17:54:39.514 - InferenceResultParser_f88d819c - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-09-16 17:54:39.514 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-09-16 17:54:39.522 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-09-16 17:54:39.525 - gpu_telemetry_manager - INFO - GPU Telemetry: Capturing baseline metrics from pynvml://localhost
+2026-09-16 17:54:39.533 - pynvml_collector - INFO - PyNVML initialized with 1 GPU(s) (1 with GPM support)
+2026-09-16 17:54:39.537 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-09-16 17:54:39.537 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-09-16 17:54:39.538 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-09-16 17:54:39.539 - system_controller - INFO - Waiting for result domains: profile, server_metrics, telemetry
+2026-09-16 17:54:39.543 - system_controller - INFO - DCGM telemetry enabled - 1/1 endpoint(s) reachable
+2026-09-16 17:54:40.689 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 17:54:40.698 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json?%2Fgoogle%2Fgemma-4-E4B-it%2Fresolve%2Fmain%2Fconfig.json=&etag=%22d68960fdcce766f2bfe41436325a8a483a74d125%22 "HTTP/1.1 200 OK"
+2026-09-16 17:54:40.983 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-4-E4B-it/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-16 17:54:40.988 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/gemma-4-E4B-it/ee0ef6023621cff504d758262d4e04895a5af4a2/tokenizer_config.json?%2Fgoogle%2Fgemma-4-E4B-it%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%226068e357379d36f823c377e30efb101fa2c67fe4%22 "HTTP/1.1 200 OK"
+2026-09-16 17:54:41.193 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-16 17:54:41.428 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-16 17:54:42.560 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-4-E4B-it "HTTP/1.1 200 OK"
+2026-09-16 17:54:42.595 - dataset_manager - INFO - Tokenizer(s) configured in 3.08 seconds
+2026-09-16 17:54:42.595 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-09-16 17:54:42.907 - MemoryMapDatasetBackingStore_da9b0b2a - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_bbedb11a6a0c4984b9c8f81e5e8ae8fb/dataset.dat)
+2026-09-16 17:54:42.913 - MemoryMapDatasetBackingStore_da9b0b2a - INFO - Data file finalized: 100 conversations, 0.53 MB
+2026-09-16 17:54:42.913 - MemoryMapDatasetBackingStore_da9b0b2a - INFO - Index file created: /tmp/aiperf_mmap_bbedb11a6a0c4984b9c8f81e5e8ae8fb/index.dat
+2026-09-16 17:54:42.914 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP format=MemoryMapFormat.CONVERSATION data_file_path=PosixPath('/tmp/aiperf_mmap_bbedb11a6a0c4984b9c8f81e5e8ae8fb/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_bbedb11a6a0c4984b9c8f81e5e8ae8fb/index.dat') conversation_count=100 total_size_bytes=553427 compressed=False compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-09-16 17:54:42.916 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 100, unique turn count: 100
+2026-09-16 17:54:42.917 - dataset_manager - INFO - Generating inputs.json file at /root/llm_perf/artifacts/20260916_171715_google_gemma-4-E4B-it_c1,4,16,32,64,128,256/profile_runs/trial_0002/concurrency_1/inputs.json
+2026-09-16 17:54:42.918 - PhaseOrchestrator_8262b277 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-09-16 17:54:42.920 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-09-16 17:54:42.996 - dataset_manager - INFO - Dataset client initialized and freed 100 conversations from memory
+2026-09-16 17:54:42.997 - dataset_manager - INFO - Dataset configured in 0.40 seconds
+2026-09-16 17:54:42.998 - system_controller - INFO - All services configured in 3.48 seconds
+2026-09-16 17:54:42.998 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-09-16 17:54:42.999 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-09-16 17:54:43.000 - system_controller - INFO - All services started profiling successfully
+2026-09-16 17:54:43.000 - system_controller - INFO - AIPerf System is PROFILING
+2026-09-16 17:54:43.001 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-09-16 17:54:43.002 - PhaseRunner - NOTICE - Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 300.0s duration
+2026-09-16 17:54:43.002 - PhaseRunner - INFO - Waiting for event 'profiling phase sending' with timeout of 299.999269946s
+2026-09-16 17:54:43.003 - records_manager - INFO - Credit phase start: profiling
+2026-09-16 17:59:43.003 - PhaseRunner - INFO - Timeout of 299.999269946s elapsed for event 'profiling phase sending'
+2026-09-16 17:59:43.004 - PhaseRunner - NOTICE - Phase profiling (profiling) sending complete | sent=137, completed=136, in_flight=1 | sessions: sent=137, completed=136 | timeout_triggered=True
+2026-09-16 17:59:43.004 - PhaseRunner - INFO - Waiting for event 'profiling phase credits returned' with timeout of 29.997458239000025s
+2026-09-16 17:59:43.004 - records_manager - INFO - Sent 137 requests. Waiting for all to complete...
+2026-09-16 17:59:44.497 - PhaseRunner - NOTICE - Phase profiling (profiling) complete | completed=137, cancelled=0, errors=0 | sessions: completed=137, cancelled=0 | elapsed=301.49s
+2026-09-16 17:59:44.498 - PhaseOrchestrator_8262b277 - NOTICE - All credits completed
+2026-09-16 17:59:44.498 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-09-16 17:59:44.498 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, phase_index=0, profiling_index=0, phase_name='profiling', phase_kind='profiling', start_ns=1789552483002224722, sent_end_ns=1789552783004020039, requests_end_ns=1789552784497159874, baseline_start_ns=1789552483002213202, baseline_end_ns=1789552784497166754, total_expected_requests=None, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=137, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=True, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=136, error_records=0)
+2026-09-16 17:59:44.500 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 136 of 137 records processed)...
+2026-09-16 17:59:44.500 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-09-16 17:59:44.502 - records_manager - INFO - Processed 137 valid requests and 0 errors (137 total).
+2026-09-16 17:59:44.502 - records_manager - INFO - Received all records, processing now...
+2026-09-16 17:59:44.503 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-09-16 17:59:44.503 - gpu_telemetry_manager - INFO - GPU Telemetry: Profiling complete, capturing final metrics...
+2026-09-16 17:59:44.509 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-09-16 17:59:46.497 - records_manager - INFO - Processing records results...
+2026-09-16 17:59:46.679 - system_controller - INFO - Waiting for result domains: server_metrics, telemetry
+2026-09-16 17:59:46.679 - system_controller - INFO - Waiting for result domains: server_metrics
+2026-09-16 17:59:47.041 - records_manager - INFO - _finalize_and_process_results completed
+2026-09-16 17:59:47.047 - system_controller - INFO - All results received, initiating shutdown
+2026-09-16 17:59:47.651 - ExporterManager - INFO - Exporting all records
+2026-09-16 17:59:47.758 - ExporterManager - INFO - Exporting console data

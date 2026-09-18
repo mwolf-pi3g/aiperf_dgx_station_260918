@@ -1,0 +1,135 @@
+# AIPerf Server Metrics Export (CSV)
+# aiperf_version: 0.12.0
+# schema_version: 1.0
+# benchmark_id: 214f10450c8b4c43b3cb405017e0a24e
+# Note: Same benchmark_id and version appear in JSON and Parquet exports
+#
+Endpoint,Type,Metric,Unit,avg,min,max,std,p1,p5,p10,p25,p50,p75,p90,p95,p99,engine,model_name,reason,sleep_state,Description
+localhost:8000,gauge,process_max_fds,,65535.0000,65535.0000,65535.0000,0.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,,,,,Maximum number of open file descriptors.
+localhost:8000,gauge,process_open_fds,,84.9658,68.0000,86.0000,0.7763,85.0000,85.0000,85.0000,85.0000,85.0000,85.0000,85.0000,85.0000,85.0000,,,,,Number of open file descriptors.
+localhost:8000,gauge,process_resident_memory_bytes,bytes,3634757632.0000,3634757632.0000,3634757632.0000,0.0000,3634757632.0000,3634757632.0000,3634757632.0000,3634757632.0000,3634757632.0000,3634757632.0000,3634757632.0000,3634757632.0000,3634757632.0000,,,,,Resident memory size in bytes.
+localhost:8000,gauge,process_start_time_seconds,seconds,1789550125.8000,1789550125.8000,1789550125.8000,0.0000,1789550125.8000,1789550125.8000,1789550125.8000,1789550125.8000,1789550125.8000,1789550125.8000,1789550125.8000,1789550125.8000,1789550125.8000,,,,,Start time of the process since unix epoch in seconds.
+localhost:8000,gauge,process_virtual_memory_bytes,bytes,32597673381.1158,32597409792.0000,32601604096.0000,796445.6706,32597409792.0000,32597409792.0000,32597409792.0000,32597409792.0000,32597409792.0000,32597409792.0000,32598458368.0000,32599506944.0000,32600555520.0000,,,,,Virtual memory size in bytes.
+localhost:8000,gauge,vllm:kv_cache_usage_perc,ratio,0.0037,0.0000,0.0044,0.0010,0.0000,0.0000,0.0037,0.0038,0.0040,0.0042,0.0043,0.0044,0.0044,0,google/gemma-4-E4B-it,,,KV-cache usage. 1 means 100 percent usage.
+localhost:8000,gauge,vllm:num_requests_running,requests,14.9063,0.0000,16.0000,3.9538,0.0000,0.0000,16.0000,16.0000,16.0000,16.0000,16.0000,16.0000,16.0000,0,google/gemma-4-E4B-it,,,Number of requests in model execution batches.
+localhost:8000,gauge,vllm:num_requests_waiting,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,google/gemma-4-E4B-it,,,Number of requests waiting to be processed.
+localhost:8000,gauge,vllm:engine_sleep_state,,1.0000,1.0000,1.0000,0.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0,google/gemma-4-E4B-it,,awake,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:engine_sleep_state,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,google/gemma-4-E4B-it,,discard_all,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:engine_sleep_state,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,google/gemma-4-E4B-it,,weights_offloaded,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:num_requests_waiting_by_reason,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,google/gemma-4-E4B-it,capacity,,"Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting."
+localhost:8000,gauge,vllm:num_requests_waiting_by_reason,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,google/gemma-4-E4B-it,deferred,,"Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting."
+
+Endpoint,Type,Metric,Unit,total,rate,rate_avg,rate_min,rate_max,rate_std,engine,finished_reason,mode,model_name,outcome,request_type,source,generation,handler,method,status,Description
+localhost:8000,counter,process_cpu_seconds,seconds,287.5100,0.9444,0.9538,0.8770,0.9660,0.0158,,,,,,,,,,,,Total user and system CPU time spent in seconds.
+localhost:8000,counter,http_requests,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,,/openapi.json,GET,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,2128.0000,6.9901,7.0400,6.4000,8.0000,0.7907,,,,,,,,,/v1/chat/completions,POST,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,20.0000,0.0657,0.0667,0.0000,0.1000,0.0479,,,,,,,,,/v1/models,GET,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,,none,GET,4xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,,none,OPTIONS,4xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,,none,POST,4xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,python_gc_collections,,1413.0000,4.6415,4.7067,4.0000,5.8000,0.5112,,,,,,,,0,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_collections,,128.0000,0.4205,0.4267,0.3000,0.5000,0.0583,,,,,,,,1,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_collections,,12.0000,0.0394,0.0400,0.0000,0.1000,0.0498,,,,,,,,2,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_objects_collected,,84976.0000,279.1309,283.2533,150.4000,357.2000,57.6547,,,,,,,,0,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_collected,,14114.0000,46.3620,47.0467,4.7000,141.0000,39.3387,,,,,,,,1,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_collected,,1032.0000,3.3899,3.4400,0.0000,20.0000,5.3559,,,,,,,,2,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,0,,,,Uncollectable objects found during GC
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,1,,,,Uncollectable objects found during GC
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,,,,2,,,,Uncollectable objects found during GC
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,non_streaming,google/gemma-4-E4B-it,no_tool_call,chat_completions,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,non_streaming,google/gemma-4-E4B-it,no_tool_call,other,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,non_streaming,google/gemma-4-E4B-it,no_tool_call,responses,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,non_streaming,google/gemma-4-E4B-it,tool_call,chat_completions,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,non_streaming,google/gemma-4-E4B-it,tool_call,other,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,non_streaming,google/gemma-4-E4B-it,tool_call,responses,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,594766.0000,1953.6995,1976.9000,1859.6000,2110.7000,70.4513,,,streaming,google/gemma-4-E4B-it,no_tool_call,chat_completions,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,streaming,google/gemma-4-E4B-it,no_tool_call,other,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,streaming,google/gemma-4-E4B-it,no_tool_call,responses,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,streaming,google/gemma-4-E4B-it,tool_call,chat_completions,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,streaming,google/gemma-4-E4B-it,tool_call,other,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:tool_call_parser_invocations,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,streaming,google/gemma-4-E4B-it,tool_call,responses,,,,,,Total number of ToolParser invocations. Non-streaming increments once per choice; streaming increments once per delta.
+localhost:8000,counter,vllm:estimated_flops_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,Estimated number of floating point operations per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:estimated_read_bytes_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,Estimated number of bytes read from memory per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:estimated_write_bytes_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,Estimated number of bytes written to memory per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:external_prefix_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,"External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens."
+localhost:8000,counter,vllm:external_prefix_cache_queries,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,"External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens."
+localhost:8000,counter,vllm:generation_tokens,tokens,1089536.0000,3578.9300,3615.6633,3323.3000,3662.1000,61.8436,0,,,google/gemma-4-E4B-it,,,,,,,,Number of generation tokens processed.
+localhost:8000,counter,vllm:mm_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,"Multi-modal cache hits, in terms of number of cached items."
+localhost:8000,counter,vllm:mm_cache_queries,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,"Multi-modal cache queries, in terms of number of queried items."
+localhost:8000,counter,vllm:num_preemptions,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,,,,,,Cumulative number of preemption from the engine.
+localhost:8000,counter,vllm:prefix_cache_hits,,2076672.0000,6821.4944,6922.2400,0.0000,8192.0000,1569.5550,0,,,google/gemma-4-E4B-it,,,,,,,,"Prefix cache hits, in terms of number of cached tokens."
+localhost:8000,counter,vllm:prefix_cache_queries,,2198373.0000,7221.2604,7327.9100,6611.4000,8264.7000,747.9149,0,,,google/gemma-4-E4B-it,,,,,,,,"Prefix cache queries, in terms of number of queried tokens."
+localhost:8000,counter,vllm:prompt_tokens,tokens,2198373.0000,7221.2604,7327.9100,6611.4000,8264.7000,812.9689,0,,,google/gemma-4-E4B-it,,,,,,,,Number of prefill tokens processed.
+localhost:8000,counter,vllm:prompt_tokens_cached,,2076672.0000,6821.4944,6922.2400,0.0000,8192.0000,1601.0304,0,,,google/gemma-4-E4B-it,,,,,,,,Number of cached prompt tokens (local + external).
+localhost:8000,counter,vllm:prompt_tokens_by_source,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,,google/gemma-4-E4B-it,,,external_kv_transfer,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:prompt_tokens_by_source,,2076672.0000,6821.4944,6922.2400,0.0000,8192.0000,1601.0304,0,,,google/gemma-4-E4B-it,,,local_cache_hit,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:prompt_tokens_by_source,,121701.0000,399.7659,405.6700,57.8000,8264.7000,1530.3826,0,,,google/gemma-4-E4B-it,,,local_compute,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,abort,,google/gemma-4-E4B-it,,,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,error,,google/gemma-4-E4B-it,,,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,2128.0000,6.9901,7.0400,6.4000,8.0000,0.7972,0,length,,google/gemma-4-E4B-it,,,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,repetition,,google/gemma-4-E4B-it,,,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,stop,,google/gemma-4-E4B-it,,,,,,,,Count of successfully processed requests.
+
+Endpoint,Type,Metric,Unit,count,count_rate,sum,sum_rate,avg,p1_estimate,p5_estimate,p10_estimate,p25_estimate,p50_estimate,p75_estimate,p90_estimate,p95_estimate,p99_estimate,engine,model_name,handler,method,Description,buckets
+localhost:8000,histogram,http_request_duration_highr_seconds,seconds,2148,7.0558,4804.1670,15.7808,2.2366,2.1031,2.1156,2.1312,2.1781,2.2561,2.3342,2.3810,2.3966,2.4079,,,,,Latency with many buckets but no API specific labels. Made for more accurate percentile calculations.,0.01=20;0.025=20;0.05=20;0.075=20;0.1=20;0.25=20;0.5=20;0.75=20;1.0=20;1.5=20;2.0=20;2.5=2148;3.0=2148;3.5=2148;4.0=2148;4.5=2148;5.0=2148;7.5=2148;10.0=2148;30.0=2148;60.0=2148;+Inf=2148
+localhost:8000,histogram,http_request_duration_seconds,seconds,0,,,,,,,,,,,,,,,,/openapi.json,GET,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=0
+localhost:8000,histogram,http_request_duration_seconds,seconds,2128,6.9901,4804.1611,15.7808,2.2576,1.0252,1.1258,1.2515,1.6288,2.2576,2.8864,3.2637,3.3894,3.4900,,,/v1/chat/completions,POST,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=2128
+localhost:8000,histogram,http_request_duration_seconds,seconds,20,0.0657,0.0059,0.0000,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,,,/v1/models,GET,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=20;0.5=20;1.0=20;+Inf=20
+localhost:8000,histogram,http_request_duration_seconds,seconds,0,,,,,,,,,,,,,,,,none,GET,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=0
+localhost:8000,histogram,http_request_duration_seconds,seconds,0,,,,,,,,,,,,,,,,none,OPTIONS,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=0
+localhost:8000,histogram,http_request_duration_seconds,seconds,0,,,,,,,,,,,,,,,,none,POST,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=0
+localhost:8000,histogram,vllm:e2e_request_latency_seconds,seconds,2128,6.9901,4755.3509,15.6205,2.2347,2.0900,2.0971,2.1124,2.1583,2.2347,2.3111,2.3569,2.3722,2.3844,0,google/gemma-4-E4B-it,,,Histogram of e2e request latency in seconds.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=2128;5.0=2128;10.0=2128;15.0=2128;20.0=2128;30.0=2128;40.0=2128;50.0=2128;60.0=2128;120.0=2128;240.0=2128;480.0=2128;960.0=2128;1920.0=2128;7680.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:inter_token_latency_seconds,seconds,1087408,3571.9399,4593.2039,15.0878,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0,google/gemma-4-E4B-it,,,Histogram of inter-token latency in seconds.,0.01=1087276;0.025=1087402;0.05=1087402;0.075=1087408;0.1=1087408;0.15=1087408;0.2=1087408;0.3=1087408;0.4=1087408;0.5=1087408;0.75=1087408;1.0=1087408;2.5=1087408;5.0=1087408;7.5=1087408;10.0=1087408;20.0=1087408;40.0=1087408;80.0=1087408;+Inf=1087408
+localhost:8000,histogram,vllm:iteration_tokens_total,tokens,68355,224.5339,1211237.0000,3978.6959,17.7198,16.0000,16.0000,16.0000,16.0000,16.0000,16.0000,16.0000,16.0000,16.0000,0,google/gemma-4-E4B-it,,,Histogram of number of tokens per engine_step.,1.0=0;8.0=121;16.0=68089;32.0=68089;64.0=68106;128.0=68341;256.0=68341;512.0=68341;1024.0=68341;2048.0=68348;4096.0=68349;8192.0=68349;16384.0=68355;+Inf=68355
+localhost:8000,histogram,vllm:request_decode_time_seconds,seconds,2128,6.9901,4593.2039,15.0878,2.1585,2.0714,2.0717,2.0721,2.0899,2.1543,2.2186,2.2572,2.2701,2.2804,0,google/gemma-4-E4B-it,,,Histogram of time spent in DECODE phase for request.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=2128;5.0=2128;10.0=2128;15.0=2128;20.0=2128;30.0=2128;40.0=2128;50.0=2128;60.0=2128;120.0=2128;240.0=2128;480.0=2128;960.0=2128;1920.0=2128;7680.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_generation_tokens,tokens,2128,6.9901,1089536.0000,3578.9300,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,580.2973,655.2620,680.2503,700.2409,0,google/gemma-4-E4B-it,,,Number of generation tokens processed.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=2128;2000.0=2128;5000.0=2128;10000.0=2128;20000.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_inference_time_seconds,seconds,2128,6.9901,4669.8591,15.3396,2.1945,2.0721,2.0741,2.0767,2.1192,2.1945,2.2698,2.3150,2.3300,2.3421,0,google/gemma-4-E4B-it,,,Histogram of time spent in RUNNING phase for request.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=2128;5.0=2128;10.0=2128;15.0=2128;20.0=2128;30.0=2128;40.0=2128;50.0=2128;60.0=2128;120.0=2128;240.0=2128;480.0=2128;960.0=2128;1920.0=2128;7680.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_max_num_generation_tokens,tokens,2128,6.9901,1089536.0000,3578.9300,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,580.2973,655.2620,680.2503,700.2409,0,google/gemma-4-E4B-it,,,Histogram of maximum number of requested generation tokens.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=2128;2000.0=2128;5000.0=2128;10000.0=2128;20000.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_params_max_tokens,tokens,2128,6.9901,1089536.0000,3578.9300,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,580.2973,655.2620,680.2503,700.2409,0,google/gemma-4-E4B-it,,,Histogram of the max_tokens request parameter.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=2128;2000.0=2128;5000.0=2128;10000.0=2128;20000.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_params_n,,2128,6.9901,2128.0000,6.9901,1.0000,0.4102,0.4502,0.5002,0.6501,0.9000,1.0000,1.0000,1.0000,1.0000,0,google/gemma-4-E4B-it,,,Histogram of the n request parameter.,1.0=2128;2.0=2128;5.0=2128;10.0=2128;20.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_prefill_kv_computed_tokens,tokens,2128,6.9901,121701.0000,399.7659,57.1903,8.7631,8.7894,8.8223,8.9209,9.0854,9.2499,9.3485,9.3814,1033.0730,0,google/gemma-4-E4B-it,,,Histogram of new KV tokens computed during prefill (excluding cached tokens).,1.0=0;2.0=0;5.0=0;10.0=2028;20.0=2028;50.0=2028;100.0=2028;200.0=2028;500.0=2028;1000.0=2028;2000.0=2128;5000.0=2128;10000.0=2128;20000.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_prefill_time_seconds,seconds,2128,6.9901,76.6552,0.2518,0.0360,0.0000,0.0012,0.0048,0.0156,0.0336,0.0564,0.0701,0.0746,0.0783,0,google/gemma-4-E4B-it,,,Histogram of time spent in PREFILL phase for request.,0.3=2128;0.5=2128;0.8=2128;1.0=2128;1.5=2128;2.0=2128;2.5=2128;5.0=2128;10.0=2128;15.0=2128;20.0=2128;30.0=2128;40.0=2128;50.0=2128;60.0=2128;120.0=2128;240.0=2128;480.0=2128;960.0=2128;1920.0=2128;7680.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_prompt_tokens,tokens,2128,6.9901,2198373.0000,7221.2604,1033.0700,1033.0703,1033.0703,1033.0703,1033.0703,1033.0703,1033.0703,1033.0703,1033.0703,1033.0703,0,google/gemma-4-E4B-it,,,Number of prefill tokens processed.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=0;2000.0=2128;5000.0=2128;10000.0=2128;20000.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_queue_time_seconds,seconds,2128,6.9901,0.0310,0.0001,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,google/gemma-4-E4B-it,,,Histogram of time spent in WAITING phase for request.,0.3=2128;0.5=2128;0.8=2128;1.0=2128;1.5=2128;2.0=2128;2.5=2128;5.0=2128;10.0=2128;15.0=2128;20.0=2128;30.0=2128;40.0=2128;50.0=2128;60.0=2128;120.0=2128;240.0=2128;480.0=2128;960.0=2128;1920.0=2128;7680.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:request_time_per_output_token_seconds,seconds,2128,6.9901,8.9887,0.0295,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0.0042,0,google/gemma-4-E4B-it,,,Histogram of time_per_output_token_seconds per request.,0.01=2128;0.025=2128;0.05=2128;0.075=2128;0.1=2128;0.15=2128;0.2=2128;0.3=2128;0.4=2128;0.5=2128;0.75=2128;1.0=2128;2.5=2128;5.0=2128;7.5=2128;10.0=2128;20.0=2128;40.0=2128;80.0=2128;+Inf=2128
+localhost:8000,histogram,vllm:time_to_first_token_seconds,seconds,2128,6.9901,149.3004,0.4904,0.0702,0.0453,0.0523,0.0611,0.0632,0.0666,0.0701,0.0721,0.0838,0.2095,0,google/gemma-4-E4B-it,,,Histogram of time to first token in seconds.,0.001=0;0.005=0;0.01=0;0.02=0;0.04=0;0.06=160;0.08=2014;0.1=2038;0.25=2128;0.5=2128;0.75=2128;1.0=2128;2.5=2128;5.0=2128;7.5=2128;10.0=2128;20.0=2128;40.0=2128;80.0=2128;160.0=2128;640.0=2128;2560.0=2128;+Inf=2128
+
+Endpoint,Metric,Key,Value,Description
+localhost:8000,python_info,implementation,CPython,Python platform information
+localhost:8000,python_info,major,3,Python platform information
+localhost:8000,python_info,minor,12,Python platform information
+localhost:8000,python_info,patchlevel,3,Python platform information
+localhost:8000,python_info,version,3.12.3,Python platform information
+localhost:8000,vllm:cache_config_info,_block_size_resolved,True,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,block_size,16,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,cache_dtype,fp8,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,enable_prefix_caching,True,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,engine,0,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,gpu_memory_utilization,0.4,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,is_attention_free,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_dtype_skip_layers,[],Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_layout,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_max_concurrency,92.17273107486407,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_memory_bytes,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_size_tokens,3020316,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_offloading_backend,native,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_offloading_size,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_sharing_fast_prefill,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_block_size,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_cache_dtype,auto,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_cache_mode,none,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_page_size_padded,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_ssm_cache_dtype,auto,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_cpu_blocks,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_gpu_blocks,661155,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_gpu_blocks_override,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_cache_retention_interval,0,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_caching_hash_algo,sha256,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_match_unit,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,replayssm_buffer_len,16,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,skip_page_size_padded,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,sliding_window,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,use_kda_recoverssm,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,use_replayssm,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,user_specified_block_size,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,user_specified_mamba_block_size,False,Information of the LLMEngine CacheConfig
