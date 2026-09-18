@@ -1,0 +1,80 @@
+2026-09-17 19:49:24.548 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-09-17 19:49:24.560 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://localhost:8000/metrics']
+2026-09-17 19:49:24.575 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-09-17 19:49:24.581 - GPUTelemetryJSONLWriter_b481ec71 - INFO - GPU telemetry export enabled: /root/llm_perf/artifacts/20260917_194410_nvidia_DeepSeek-V4-Flash-nvfp4-DSpark_c1,4,16,32/profile_runs/trial_0001/concurrency_4/gpu_telemetry_export.jsonl
+2026-09-17 19:49:24.588 - OTelMetricsResultsProcessor_6bd370ad - INFO - Telemetry streaming is disabled (set --otel-url and/or --mlflow-tracking-uri to enable)
+2026-09-17 19:49:24.589 - RecordExportJSONLWriter_760a0a2a - INFO - Record metrics export enabled: /root/llm_perf/artifacts/20260917_194410_nvidia_DeepSeek-V4-Flash-nvfp4-DSpark_c1,4,16,32/profile_runs/trial_0001/concurrency_4/profile_export.jsonl
+2026-09-17 19:49:24.593 - system_controller - INFO - Registered Record Processor (id: 'record_processor_2ddfabe5')
+2026-09-17 19:49:24.616 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-09-17 19:49:24.659 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-09-17 19:49:24.675 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-09-17 19:49:24.680 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-09-17 19:49:24.692 - system_controller - INFO - Registered Worker (id: 'worker_4d033277')
+2026-09-17 19:49:24.702 - system_controller - INFO - Registered Worker (id: 'worker_b6a13975')
+2026-09-17 19:49:24.703 - system_controller - INFO - Registered Worker (id: 'worker_457a453e')
+2026-09-17 19:49:24.704 - system_controller - INFO - Registered Worker (id: 'worker_6c15a4a5')
+2026-09-17 19:49:25.045 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-09-17 19:49:25.045 - system_controller - INFO - Configuring all services to start profiling
+2026-09-17 19:49:25.046 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-09-17 19:49:25.046 - InferenceResultParser_6423ade2 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-09-17 19:49:25.047 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-09-17 19:49:25.055 - server_metrics_manager - INFO - Server Metrics: Capturing baseline metrics...
+2026-09-17 19:49:25.057 - gpu_telemetry_manager - INFO - GPU Telemetry: Capturing baseline metrics from pynvml://localhost
+2026-09-17 19:49:25.066 - pynvml_collector - INFO - PyNVML initialized with 1 GPU(s) (1 with GPM support)
+2026-09-17 19:49:25.068 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_request_size_bytes
+2026-09-17 19:49:25.068 - http://localhost:8000/metrics - INFO - Skipping unsupported summary metric: http_response_size_bytes
+2026-09-17 19:49:25.069 - system_controller - INFO - Server metrics enabled - 1/1 endpoint(s) reachable.
+2026-09-17 19:49:25.070 - system_controller - INFO - Waiting for result domains: profile, server_metrics, telemetry
+2026-09-17 19:49:25.075 - system_controller - INFO - DCGM telemetry enabled - 1/1 endpoint(s) reachable
+2026-09-17 19:49:26.244 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 19:49:26.286 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/ba3b12c9bb31c459af02e2162b00e5ef1fa05a1c/config.json?%2Fnvidia%2FDeepSeek-V4-Flash-nvfp4-DSpark%2Fresolve%2Fmain%2Fconfig.json=&etag=%220cfa96af30aa0990f93ce3d6adc9d00ff4eb2396%22 "HTTP/1.1 200 OK"
+2026-09-17 19:49:26.494 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 19:49:26.500 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/ba3b12c9bb31c459af02e2162b00e5ef1fa05a1c/tokenizer_config.json?%2Fnvidia%2FDeepSeek-V4-Flash-nvfp4-DSpark%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22f3dad388a2bbfd6a8605bd02754acd86d9ca5112%22 "HTTP/1.1 200 OK"
+2026-09-17 19:49:26.696 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-17 19:49:26.703 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/ba3b12c9bb31c459af02e2162b00e5ef1fa05a1c/tokenizer_config.json?%2Fnvidia%2FDeepSeek-V4-Flash-nvfp4-DSpark%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22f3dad388a2bbfd6a8605bd02754acd86d9ca5112%22 "HTTP/1.1 200 OK"
+2026-09-17 19:49:26.907 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-17 19:49:27.115 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-17 19:49:27.767 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/nvidia/DeepSeek-V4-Flash-nvfp4-DSpark "HTTP/1.1 200 OK"
+2026-09-17 19:49:27.795 - dataset_manager - INFO - Tokenizer(s) configured in 2.75 seconds
+2026-09-17 19:49:27.795 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-09-17 19:49:28.129 - MemoryMapDatasetBackingStore_431139dd - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_effbea46db83452494ca03617af3d9cc/dataset.dat)
+2026-09-17 19:49:28.135 - MemoryMapDatasetBackingStore_431139dd - INFO - Data file finalized: 100 conversations, 0.51 MB
+2026-09-17 19:49:28.136 - MemoryMapDatasetBackingStore_431139dd - INFO - Index file created: /tmp/aiperf_mmap_effbea46db83452494ca03617af3d9cc/index.dat
+2026-09-17 19:49:28.136 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP format=MemoryMapFormat.CONVERSATION data_file_path=PosixPath('/tmp/aiperf_mmap_effbea46db83452494ca03617af3d9cc/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_effbea46db83452494ca03617af3d9cc/index.dat') conversation_count=100 total_size_bytes=530676 compressed=False compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-09-17 19:49:28.139 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 100, unique turn count: 100
+2026-09-17 19:49:28.179 - dataset_manager - INFO - Generating inputs.json file at /root/llm_perf/artifacts/20260917_194410_nvidia_DeepSeek-V4-Flash-nvfp4-DSpark_c1,4,16,32/profile_runs/trial_0001/concurrency_4/inputs.json
+2026-09-17 19:49:28.180 - PhaseOrchestrator_a0c437f2 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-09-17 19:49:28.182 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-09-17 19:49:28.235 - dataset_manager - INFO - Dataset client initialized and freed 100 conversations from memory
+2026-09-17 19:49:28.236 - dataset_manager - INFO - Dataset configured in 0.44 seconds
+2026-09-17 19:49:28.237 - system_controller - INFO - All services configured in 3.19 seconds
+2026-09-17 19:49:28.237 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-09-17 19:49:28.238 - server_metrics_manager - INFO - Server Metrics: Started 1 collector(s) successfully
+2026-09-17 19:49:28.239 - system_controller - INFO - All services started profiling successfully
+2026-09-17 19:49:28.239 - system_controller - INFO - AIPerf System is PROFILING
+2026-09-17 19:49:28.240 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-09-17 19:49:28.240 - PhaseRunner - NOTICE - Phase profiling (profiling) started | phase_index=0 | profiling_index=0 | target: 300.0s duration
+2026-09-17 19:49:28.241 - PhaseRunner - INFO - Waiting for event 'profiling phase sending' with timeout of 299.999189658s
+2026-09-17 19:49:28.241 - records_manager - INFO - Credit phase start: profiling
+2026-09-17 19:54:28.240 - PhaseRunner - INFO - Timeout of 299.999189658s elapsed for event 'profiling phase sending'
+2026-09-17 19:54:28.241 - PhaseRunner - NOTICE - Phase profiling (profiling) sending complete | sent=268, completed=264, in_flight=4 | sessions: sent=268, completed=264 | timeout_triggered=True
+2026-09-17 19:54:28.241 - PhaseRunner - INFO - Waiting for event 'profiling phase credits returned' with timeout of 29.99872485100002s
+2026-09-17 19:54:28.242 - records_manager - INFO - Sent 268 requests. Waiting for all to complete...
+2026-09-17 19:54:31.734 - PhaseRunner - NOTICE - Phase profiling (profiling) complete | completed=268, cancelled=0, errors=0 | sessions: completed=268, cancelled=0 | elapsed=303.49s
+2026-09-17 19:54:31.735 - PhaseOrchestrator_a0c437f2 - NOTICE - All credits completed
+2026-09-17 19:54:31.736 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-09-17 19:54:31.735 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, phase_index=0, profiling_index=0, phase_name='profiling', phase_kind='profiling', start_ns=1789645768240644814, sent_end_ns=1789646068241075413, requests_end_ns=1789646071734386492, baseline_start_ns=1789645768240633325, baseline_end_ns=1789646071734394044, total_expected_requests=None, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=268, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=True, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=265, error_records=0)
+2026-09-17 19:54:31.737 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 265 of 268 records processed)...
+2026-09-17 19:54:31.738 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-09-17 19:54:31.744 - records_manager - INFO - Processed 268 valid requests and 0 errors (268 total).
+2026-09-17 19:54:31.744 - records_manager - INFO - Received all records, processing now...
+2026-09-17 19:54:31.745 - server_metrics_manager - INFO - Server Metrics: Profiling complete, capturing final metrics...
+2026-09-17 19:54:31.745 - gpu_telemetry_manager - INFO - GPU Telemetry: Profiling complete, capturing final metrics...
+2026-09-17 19:54:31.746 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-09-17 19:54:33.733 - records_manager - INFO - Processing records results...
+2026-09-17 19:54:33.992 - system_controller - INFO - Waiting for result domains: server_metrics, telemetry
+2026-09-17 19:54:33.992 - system_controller - INFO - Waiting for result domains: server_metrics
+2026-09-17 19:54:34.296 - records_manager - INFO - _finalize_and_process_results completed
+2026-09-17 19:54:34.299 - system_controller - INFO - All results received, initiating shutdown
+2026-09-17 19:54:34.902 - ExporterManager - INFO - Exporting all records
+2026-09-17 19:54:35.004 - ExporterManager - INFO - Exporting console data

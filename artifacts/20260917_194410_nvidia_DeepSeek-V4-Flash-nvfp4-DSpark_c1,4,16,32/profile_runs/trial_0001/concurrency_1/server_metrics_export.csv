@@ -1,0 +1,115 @@
+# AIPerf Server Metrics Export (CSV)
+# aiperf_version: 0.12.0
+# schema_version: 1.0
+# benchmark_id: 37b4d11b335242c1a85c09fb9a63a9b6
+# Note: Same benchmark_id and version appear in JSON and Parquet exports
+#
+Endpoint,Type,Metric,Unit,avg,min,max,std,p1,p5,p10,p25,p50,p75,p90,p95,p99,engine,model_name,reason,sleep_state,Description
+localhost:8000,gauge,process_max_fds,,65535.0000,65535.0000,65535.0000,0.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,,,,,Maximum number of open file descriptors.
+localhost:8000,gauge,process_open_fds,,69.9967,68.0000,70.0000,0.0741,70.0000,70.0000,70.0000,70.0000,70.0000,70.0000,70.0000,70.0000,70.0000,,,,,Number of open file descriptors.
+localhost:8000,gauge,process_resident_memory_bytes,bytes,1461649408.0000,1461649408.0000,1461649408.0000,0.0000,1461649408.0000,1461649408.0000,1461649408.0000,1461649408.0000,1461649408.0000,1461649408.0000,1461649408.0000,1461649408.0000,1461649408.0000,,,,,Resident memory size in bytes.
+localhost:8000,gauge,process_start_time_seconds,seconds,1789645105.6000,1789645105.6000,1789645105.6000,0.0000,1789645105.6000,1789645105.6000,1789645105.6000,1789645105.6000,1789645105.6000,1789645105.6000,1789645105.6000,1789645105.6000,1789645105.6000,,,,,Start time of the process since unix epoch in seconds.
+localhost:8000,gauge,process_virtual_memory_bytes,bytes,30859247435.9560,30792220672.0000,30859395072.0000,3147451.7441,30859395072.0000,30859395072.0000,30859395072.0000,30859395072.0000,30859395072.0000,30859395072.0000,30859395072.0000,30859395072.0000,30859395072.0000,,,,,Virtual memory size in bytes.
+localhost:8000,gauge,vllm:kv_cache_usage_perc,ratio,0.0004,0.0000,0.0061,0.0003,0.0000,0.0000,0.0004,0.0004,0.0004,0.0004,0.0004,0.0004,0.0004,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,KV-cache usage. 1 means 100 percent usage.
+localhost:8000,gauge,vllm:num_requests_running,requests,0.9033,0.0000,1.0000,0.2957,0.0000,0.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Number of requests in model execution batches.
+localhost:8000,gauge,vllm:num_requests_waiting,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Number of requests waiting to be processed.
+localhost:8000,gauge,vllm:engine_sleep_state,,1.0000,1.0000,1.0000,0.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,awake,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:engine_sleep_state,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,discard_all,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:engine_sleep_state,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,weights_offloaded,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:num_requests_waiting_by_reason,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,capacity,,"Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting."
+localhost:8000,gauge,vllm:num_requests_waiting_by_reason,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,deferred,,"Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting."
+
+Endpoint,Type,Metric,Unit,total,rate,rate_avg,rate_min,rate_max,rate_std,engine,finished_reason,model_name,source,generation,handler,method,status,Description
+localhost:8000,counter,process_cpu_seconds,seconds,12.4800,0.0407,0.0412,0.0110,0.0440,0.0064,,,,,,,,,Total user and system CPU time spent in seconds.
+localhost:8000,counter,http_requests,requests,89.0000,0.3131,0.3107,0.3000,0.4000,0.0315,,,,,,/v1/chat/completions,POST,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,20.0000,0.0652,0.0667,0.0000,0.1000,0.0479,,,,,,/v1/models,GET,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,python_gc_collections,,30.0000,0.0978,0.1000,0.0000,0.2000,0.0525,,,,,0,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_collections,,3.0000,0.0098,0.0100,0.0000,0.1000,0.0305,,,,,1,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_collections,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,2,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_objects_collected,,9706.0000,31.6510,32.3533,0.0000,73.6000,16.5407,,,,,0,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_collected,,1780.0000,5.8045,5.9333,0.0000,65.4000,18.3134,,,,,1,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_collected,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,2,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,0,,,,Uncollectable objects found during GC
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,1,,,,Uncollectable objects found during GC
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,2,,,,Uncollectable objects found during GC
+localhost:8000,counter,vllm:estimated_flops_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Estimated number of floating point operations per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:estimated_read_bytes_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Estimated number of bytes read from memory per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:estimated_write_bytes_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Estimated number of bytes written to memory per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:external_prefix_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,"External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens."
+localhost:8000,counter,vllm:external_prefix_cache_queries,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,"External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens."
+localhost:8000,counter,vllm:generation_tokens,tokens,46080.0000,150.2657,152.1933,0.0000,160.7000,32.1798,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Number of generation tokens processed.
+localhost:8000,counter,vllm:mm_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,"Multi-modal cache hits, in terms of number of cached items."
+localhost:8000,counter,vllm:mm_cache_queries,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,"Multi-modal cache queries, in terms of number of queried items."
+localhost:8000,counter,vllm:num_preemptions,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Cumulative number of preemption from the engine.
+localhost:8000,counter,vllm:prefix_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,"Prefix cache hits, in terms of number of cached tokens."
+localhost:8000,counter,vllm:prefix_cache_queries,,99631.0000,324.8942,332.1033,0.0000,442.8000,76.9153,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,"Prefix cache queries, in terms of number of queried tokens."
+localhost:8000,counter,vllm:prompt_tokens,tokens,99631.0000,324.8942,332.1033,0.0000,442.8000,76.9153,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Number of prefill tokens processed.
+localhost:8000,counter,vllm:prompt_tokens_cached,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Number of cached prompt tokens (local + external).
+localhost:8000,counter,vllm:prompt_tokens_by_source,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,external_kv_transfer,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:prompt_tokens_by_source,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,local_cache_hit,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:prompt_tokens_by_source,,99631.0000,324.8942,332.1033,0.0000,442.8000,76.9153,0,,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,local_compute,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,abort,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,error,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,90.0000,0.2935,0.2967,0.0000,0.4000,0.0765,0,length,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,repetition,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,stop,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,,,,Count of successfully processed requests.
+
+Endpoint,Type,Metric,Unit,count,count_rate,sum,sum_rate,avg,p1_estimate,p5_estimate,p10_estimate,p25_estimate,p50_estimate,p75_estimate,p90_estimate,p95_estimate,p99_estimate,engine,model_name,handler,method,Description,buckets
+localhost:8000,histogram,http_request_duration_highr_seconds,seconds,110,0.3587,301.9158,0.9845,2.7447,0.0002,0.0002,0.0003,3.0936,3.1655,3.2442,3.2914,3.3071,3.3197,,,,,Latency with many buckets but no API specific labels. Made for more accurate percentile calculations.,0.01=20;0.025=20;0.05=20;0.075=20;0.1=20;0.25=20;0.5=20;0.75=20;1.0=20;1.5=20;2.0=20;2.5=20;3.0=20;3.5=109;4.0=109;4.5=109;5.0=109;7.5=109;10.0=109;30.0=110;60.0=110;+Inf=110
+localhost:8000,histogram,http_request_duration_seconds,seconds,89,0.3131,284.1713,0.9998,3.1929,1.0439,1.2193,1.4386,2.0965,3.1929,4.2894,4.9473,5.1666,5.3420,,,/v1/chat/completions,POST,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=89
+localhost:8000,histogram,http_request_duration_seconds,seconds,20,0.0652,0.0058,0.0000,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,,,/v1/models,GET,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=20;0.5=20;1.0=20;+Inf=20
+localhost:8000,histogram,vllm:e2e_request_latency_seconds,seconds,90,0.2935,301.8329,0.9843,3.3537,3.1921,3.1921,3.1921,3.1921,3.1921,3.1921,3.1921,3.1921,4.7920,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of e2e request latency in seconds.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=0;5.0=89;10.0=89;15.0=89;20.0=90;30.0=90;40.0=90;50.0=90;60.0=90;120.0=90;240.0=90;480.0=90;960.0=90;1920.0=90;7680.0=90;+Inf=90
+localhost:8000,histogram,vllm:inter_token_latency_seconds,seconds,45990,149.9722,274.1925,0.8941,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of inter-token latency in seconds.,0.01=45990;0.025=45990;0.05=45990;0.075=45990;0.1=45990;0.15=45990;0.2=45990;0.3=45990;0.4=45990;0.5=45990;0.75=45990;1.0=45990;2.5=45990;5.0=45990;7.5=45990;10.0=45990;20.0=45990;40.0=45990;80.0=45990;+Inf=45990
+localhost:8000,histogram,vllm:iteration_tokens_total,tokens,46080,150.2657,145711.0000,475.1599,3.1621,0.0000,0.0020,0.0521,0.2024,0.4528,0.7033,0.8536,0.9037,0.9438,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of number of tokens per engine_step.,1.0=45990;8.0=45990;16.0=45990;32.0=45990;64.0=45990;128.0=45990;256.0=45990;512.0=45990;1024.0=45990;2048.0=46080;4096.0=46080;8192.0=46080;16384.0=46080;+Inf=46080
+localhost:8000,histogram,vllm:request_decode_time_seconds,seconds,90,0.2935,274.1925,0.8941,3.0466,3.0466,3.0466,3.0466,3.0466,3.0466,3.0466,3.0466,3.0466,3.0466,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of time spent in DECODE phase for request.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=0;5.0=90;10.0=90;15.0=90;20.0=90;30.0=90;40.0=90;50.0=90;60.0=90;120.0=90;240.0=90;480.0=90;960.0=90;1920.0=90;7680.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_generation_tokens,tokens,90,0.2935,46080.0000,150.2657,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,578.9679,653.1346,677.8568,697.6346,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Number of generation tokens processed.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=90;2000.0=90;5000.0=90;10000.0=90;20000.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_inference_time_seconds,seconds,90,0.2935,301.4419,0.9830,3.3494,3.1879,3.1879,3.1879,3.1879,3.1879,3.1879,3.1879,3.1879,4.7866,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of time spent in RUNNING phase for request.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=0;5.0=89;10.0=89;15.0=89;20.0=90;30.0=90;40.0=90;50.0=90;60.0=90;120.0=90;240.0=90;480.0=90;960.0=90;1920.0=90;7680.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_max_num_generation_tokens,tokens,90,0.2935,46080.0000,150.2657,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,578.9679,653.1346,677.8568,697.6346,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of maximum number of requested generation tokens.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=90;2000.0=90;5000.0=90;10000.0=90;20000.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_params_max_tokens,tokens,90,0.2935,46080.0000,150.2657,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,578.9679,653.1346,677.8568,697.6346,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of the max_tokens request parameter.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=90;2000.0=90;5000.0=90;10000.0=90;20000.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_params_n,,90,0.2935,90.0000,0.2935,1.0000,0.4154,0.4550,0.5044,0.6528,0.9000,1.0000,1.0000,1.0000,1.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of the n request parameter.,1.0=90;2.0=90;5.0=90;10.0=90;20.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_prefill_kv_computed_tokens,tokens,90,0.2935,99631.0000,324.8942,1107.0111,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of new KV tokens computed during prefill (excluding cached tokens).,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=0;2000.0=90;5000.0=90;10000.0=90;20000.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_prefill_time_seconds,seconds,90,0.2935,27.2495,0.0889,0.3028,0.0674,0.0717,0.0795,0.1030,0.1422,0.1813,0.2048,0.2127,1.8089,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of time spent in PREFILL phase for request.,0.3=89;0.5=89;0.8=89;1.0=89;1.5=89;2.0=89;2.5=89;5.0=89;10.0=89;15.0=90;20.0=90;30.0=90;40.0=90;50.0=90;60.0=90;120.0=90;240.0=90;480.0=90;960.0=90;1920.0=90;7680.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_prompt_tokens,tokens,90,0.2935,99631.0000,324.8942,1107.0111,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,1107.0112,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Number of prefill tokens processed.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=0;2000.0=90;5000.0=90;10000.0=90;20000.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_queue_time_seconds,seconds,90,0.2935,0.0005,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of time spent in WAITING phase for request.,0.3=90;0.5=90;0.8=90;1.0=90;1.5=90;2.0=90;2.5=90;5.0=90;10.0=90;15.0=90;20.0=90;30.0=90;40.0=90;50.0=90;60.0=90;120.0=90;240.0=90;480.0=90;960.0=90;1920.0=90;7680.0=90;+Inf=90
+localhost:8000,histogram,vllm:request_time_per_output_token_seconds,seconds,90,0.2935,0.5366,0.0017,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0.0060,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of time_per_output_token_seconds per request.,0.01=90;0.025=90;0.05=90;0.075=90;0.1=90;0.15=90;0.2=90;0.3=90;0.4=90;0.5=90;0.75=90;1.0=90;2.5=90;5.0=90;7.5=90;10.0=90;20.0=90;40.0=90;80.0=90;+Inf=90
+localhost:8000,histogram,vllm:time_to_first_token_seconds,seconds,90,0.2935,27.6850,0.0903,0.3076,0.1191,0.1193,0.1197,0.1254,0.1458,0.1662,0.1785,0.1826,1.7741,0,nvidia/DeepSeek-V4-Flash-nvfp4-DSpark,,,Histogram of time to first token in seconds.,0.001=0;0.005=0;0.01=0;0.02=0;0.04=0;0.06=0;0.08=0;0.1=0;0.25=89;0.5=89;0.75=89;1.0=89;2.5=89;5.0=89;7.5=89;10.0=89;20.0=90;40.0=90;80.0=90;160.0=90;640.0=90;2560.0=90;+Inf=90
+
+Endpoint,Metric,Key,Value,Description
+localhost:8000,python_info,implementation,CPython,Python platform information
+localhost:8000,python_info,major,3,Python platform information
+localhost:8000,python_info,minor,12,Python platform information
+localhost:8000,python_info,patchlevel,3,Python platform information
+localhost:8000,python_info,version,3.12.3,Python platform information
+localhost:8000,vllm:cache_config_info,_block_size_resolved,True,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,block_size,4,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,cache_dtype,fp8,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,enable_prefix_caching,True,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,engine,0,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,gpu_memory_utilization,0.92,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,is_attention_free,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_dtype_skip_layers,[],Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_layout,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_max_concurrency,5.535926807497768,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_memory_bytes,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_size_tokens,181401,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_offloading_backend,native,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_offloading_size,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_sharing_fast_prefill,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_block_size,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_cache_dtype,auto,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_cache_mode,none,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_page_size_padded,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_ssm_cache_dtype,auto,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_cpu_blocks,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_gpu_blocks,74425,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_gpu_blocks_override,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_cache_retention_interval,0,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_caching_hash_algo,sha256,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_match_unit,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,replayssm_buffer_len,16,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,skip_page_size_padded,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,sliding_window,128,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,use_kda_recoverssm,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,use_replayssm,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,user_specified_block_size,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,user_specified_mamba_block_size,False,Information of the LLMEngine CacheConfig
