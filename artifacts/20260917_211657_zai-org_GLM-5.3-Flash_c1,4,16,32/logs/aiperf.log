@@ -1,0 +1,110 @@
+2026-09-17 21:16:59.992 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 21:16:59.994 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-17 21:16:59.995 - aiperf.cli_runner._multi_run - INFO -   Configurations: 4
+2026-09-17 21:16:59.995 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 2
+2026-09-17 21:16:59.995 - aiperf.cli_runner._multi_run - INFO -   Total runs: 8
+2026-09-17 21:16:59.996 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-17 21:16:59.996 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 60.0s
+2026-09-17 21:16:59.996 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 21:16:59.997 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 3060s
+2026-09-17 21:16:59.999 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 2 trials x 4 variations
+2026-09-17 21:17:00.000 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-17 21:17:00.773 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:17:00.781 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:17:00.782 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:17:00.783 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:22:17.785 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-17 21:22:18.583 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:22:18.591 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:22:18.592 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:22:18.592 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:27:51.449 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-17 21:27:52.223 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:27:52.231 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:27:52.231 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:27:52.232 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:33:23.628 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-17 21:33:24.406 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:33:24.414 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:33:24.414 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:33:24.415 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:39:01.657 - aiperf.orchestrator.orchestrator - INFO - Inter-trial cooldown: 60.0s
+2026-09-17 21:40:01.719 - aiperf.orchestrator.orchestrator - INFO - [v0 t1] Executing run_0002...
+2026-09-17 21:40:02.536 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:40:02.545 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:40:02.545 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:40:02.546 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:45:10.585 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 21:45:10.587 - aiperf.orchestrator.orchestrator - INFO - [v1 t1] Executing run_0002...
+2026-09-17 21:45:11.374 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:45:11.382 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:45:11.383 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:45:11.383 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:50:44.545 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 21:50:44.548 - aiperf.orchestrator.orchestrator - INFO - [v2 t1] Executing run_0002...
+2026-09-17 21:50:45.327 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:50:45.335 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:50:45.336 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:50:45.336 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 21:56:17.570 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 21:56:17.572 - aiperf.orchestrator.orchestrator - INFO - [v3 t1] Executing run_0002...
+2026-09-17 21:56:18.335 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-17 21:56:18.343 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer zai-org/GLM-5.3-Flash detected
+2026-09-17 21:56:18.344 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-17 21:56:18.344 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['zai-org/GLM-5.3-Flash']
+2026-09-17 22:01:55.529 - aiperf.cli_runner._multi_run - INFO - 
+                                                                                                                                 
+  phases.profiling.concurrency   output_token_throughput   time_to_first_token   inter_token_latency   request_latency   trials  
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+                             1                                                                                                2  
+                             4                                                                                                2  
+                            16                                                                                                2  
+                            32                                                                                                2  
+                                                                                                                                 
+
+2026-09-17 22:01:55.531 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 8/8 runs successful
+2026-09-17 22:01:55.532 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 22:01:55.532 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-17 22:01:55.533 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-17 22:01:55.666 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.667 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_1/profile_export_aiperf_aggregate.json
+2026-09-17 22:01:55.668 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 22:01:55.668 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 22:01:55.669 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=1) JSON: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_1/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_1/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.691 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-17 22:01:55.691 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-17 22:01:55.692 - aiperf.cli_runner._multi_run - INFO - 
+2026-09-17 22:01:55.692 - aiperf.cli_runner._multi_run - INFO - Best Configurations:
+2026-09-17 22:01:55.692 - aiperf.cli_runner._multi_run - INFO -   Best throughput: concurrency=32 (0.29 requests/sec)
+2026-09-17 22:01:55.693 - aiperf.cli_runner._multi_run - INFO -   Best latency (p99): concurrency=4 (1436.11 ms)
+2026-09-17 22:01:55.693 - aiperf.cli_runner._multi_run - INFO -   Pareto optimal points: [{'concurrency': 4}, {'concurrency': 16}, {'concurrency': 32}]
+2026-09-17 22:01:55.700 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_4/profile_export_aiperf_aggregate.json
+2026-09-17 22:01:55.701 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.702 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=4) JSON: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_4/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_4/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.730 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_16/profile_export_aiperf_aggregate.json
+2026-09-17 22:01:55.731 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.731 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=16) JSON: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_16/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_16/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.760 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-17 22:01:55.760 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-17 22:01:55.761 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /root/llm_perf/artifacts/20260917_211657_zai-org_GLM-5.3-Flash_c1,4,16,32/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv

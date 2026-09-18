@@ -1,0 +1,117 @@
+# AIPerf Server Metrics Export (CSV)
+# aiperf_version: 0.12.0
+# schema_version: 1.0
+# benchmark_id: 713b1b1765074dc8be944733aedddba5
+# Note: Same benchmark_id and version appear in JSON and Parquet exports
+#
+Endpoint,Type,Metric,Unit,avg,min,max,std,p1,p5,p10,p25,p50,p75,p90,p95,p99,engine,model_name,reason,sleep_state,Description
+localhost:8000,gauge,process_max_fds,,65535.0000,65535.0000,65535.0000,0.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,65535.0000,,,,,Maximum number of open file descriptors.
+localhost:8000,gauge,process_open_fds,,72.9908,68.0000,73.0000,0.2044,73.0000,73.0000,73.0000,73.0000,73.0000,73.0000,73.0000,73.0000,73.0000,,,,,Number of open file descriptors.
+localhost:8000,gauge,process_resident_memory_bytes,bytes,2840657920.0000,2840657920.0000,2840657920.0000,0.0000,2840657920.0000,2840657920.0000,2840657920.0000,2840657920.0000,2840657920.0000,2840657920.0000,2840657920.0000,2840657920.0000,2840657920.0000,,,,,Resident memory size in bytes.
+localhost:8000,gauge,process_start_time_seconds,seconds,1789650790.8900,1789650790.8900,1789650790.8900,0.0000,1789650790.8900,1789650790.8900,1789650790.8900,1789650790.8900,1789650790.8900,1789650790.8900,1789650790.8900,1789650790.8900,1789650790.8900,,,,,Start time of the process since unix epoch in seconds.
+localhost:8000,gauge,process_virtual_memory_bytes,bytes,31347113984.0000,31347113984.0000,31347113984.0000,0.0000,31347113984.0000,31347113984.0000,31347113984.0000,31347113984.0000,31347113984.0000,31347113984.0000,31347113984.0000,31347113984.0000,31347113984.0000,,,,,Virtual memory size in bytes.
+localhost:8000,gauge,vllm:kv_cache_usage_perc,ratio,0.0591,0.0000,0.0615,0.0114,0.0000,0.0615,0.0615,0.0615,0.0615,0.0615,0.0615,0.0615,0.0615,0,zai-org/GLM-5.3-Flash,,,KV-cache usage. 1 means 100 percent usage.
+localhost:8000,gauge,vllm:num_requests_running,requests,3.8408,0.0000,4.0000,0.7421,0.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,0,zai-org/GLM-5.3-Flash,,,Number of requests in model execution batches.
+localhost:8000,gauge,vllm:num_requests_waiting,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,,,Number of requests waiting to be processed.
+localhost:8000,gauge,vllm:engine_sleep_state,,1.0000,1.0000,1.0000,0.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,0,zai-org/GLM-5.3-Flash,,awake,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:engine_sleep_state,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,,discard_all,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:engine_sleep_state,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,,weights_offloaded,Engine sleep state; awake = 0 means engine is sleeping; awake = 1 means engine is awake; weights_offloaded = 1 means sleep level 1; discard_all = 1 means sleep level 2.
+localhost:8000,gauge,vllm:num_requests_waiting_by_reason,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,capacity,,"Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting."
+localhost:8000,gauge,vllm:num_requests_waiting_by_reason,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,deferred,,"Number of waiting requests by reason. Reason labels: 'capacity' = waiting for scheduling capacity; 'deferred' = deferred by transient constraints (LoRA budget, KV transfer, blocked status). Sum of all reasons equals vllm:num_requests_waiting."
+
+Endpoint,Type,Metric,Unit,total,rate,rate_avg,rate_min,rate_max,rate_std,engine,finished_reason,model_name,source,generation,handler,method,status,Description
+localhost:8000,counter,process_cpu_seconds,seconds,5.3300,0.0162,0.0163,0.0150,0.0180,0.0008,,,,,,,,,Total user and system CPU time spent in seconds.
+localhost:8000,counter,http_requests,requests,44.0000,0.1337,0.1250,0.0000,0.4000,0.1884,,,,,,/v1/chat/completions,POST,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,http_requests,requests,22.0000,0.0669,0.0656,0.0000,0.1000,0.0483,,,,,,/v1/models,GET,2xx,"Total number of requests by method, status and handler."
+localhost:8000,counter,python_gc_collections,,11.0000,0.0334,0.0344,0.0000,0.2000,0.0545,,,,,0,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_collections,,1.0000,0.0030,0.0031,0.0000,0.1000,0.0177,,,,,1,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_collections,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,2,,,,Number of times this generation was collected
+localhost:8000,counter,python_gc_objects_collected,,1773.0000,5.3881,5.5406,0.0000,23.9000,8.4899,,,,,0,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_collected,,859.0000,2.6105,2.6844,0.0000,85.9000,15.1851,,,,,1,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_collected,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,2,,,,Objects collected during gc
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,0,,,,Uncollectable objects found during GC
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,1,,,,Uncollectable objects found during GC
+localhost:8000,counter,python_gc_objects_uncollectable,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,,,,,2,,,,Uncollectable objects found during GC
+localhost:8000,counter,vllm:estimated_flops_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,Estimated number of floating point operations per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:estimated_read_bytes_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,Estimated number of bytes read from memory per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:estimated_write_bytes_per_gpu,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,Estimated number of bytes written to memory per GPU (for Model Flops Utilization calculations).
+localhost:8000,counter,vllm:external_prefix_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,"External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens."
+localhost:8000,counter,vllm:external_prefix_cache_queries,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,"External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens."
+localhost:8000,counter,vllm:generation_tokens,tokens,22528.0000,68.4614,69.1156,60.4000,75.6000,4.3285,0,,zai-org/GLM-5.3-Flash,,,,,,Number of generation tokens processed.
+localhost:8000,counter,vllm:mm_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,"Multi-modal cache hits, in terms of number of cached items."
+localhost:8000,counter,vllm:mm_cache_queries,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,"Multi-modal cache queries, in terms of number of queried items."
+localhost:8000,counter,vllm:num_preemptions,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,Cumulative number of preemption from the engine.
+localhost:8000,counter,vllm:prefix_cache_hits,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,"Prefix cache hits, in terms of number of cached tokens."
+localhost:8000,counter,vllm:prefix_cache_queries,,45584.0000,138.5273,142.4500,0.0000,414.4000,189.2993,0,,zai-org/GLM-5.3-Flash,,,,,,"Prefix cache queries, in terms of number of queried tokens."
+localhost:8000,counter,vllm:prompt_tokens,tokens,45584.0000,138.5273,142.4500,0.0000,414.4000,199.9723,0,,zai-org/GLM-5.3-Flash,,,,,,Number of prefill tokens processed.
+localhost:8000,counter,vllm:prompt_tokens_cached,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,,,,,,Number of cached prompt tokens (local + external).
+localhost:8000,counter,vllm:prompt_tokens_by_source,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,external_kv_transfer,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:prompt_tokens_by_source,,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,,zai-org/GLM-5.3-Flash,local_cache_hit,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:prompt_tokens_by_source,,45584.0000,138.5273,142.4500,0.0000,414.4000,199.9723,0,,zai-org/GLM-5.3-Flash,local_compute,,,,,Number of prompt tokens by source.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,abort,zai-org/GLM-5.3-Flash,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,error,zai-org/GLM-5.3-Flash,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,44.0000,0.1337,0.1250,0.0000,0.4000,0.1884,0,length,zai-org/GLM-5.3-Flash,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,repetition,zai-org/GLM-5.3-Flash,,,,,,Count of successfully processed requests.
+localhost:8000,counter,vllm:request_success,requests,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,stop,zai-org/GLM-5.3-Flash,,,,,,Count of successfully processed requests.
+
+Endpoint,Type,Metric,Unit,count,count_rate,sum,sum_rate,avg,p1_estimate,p5_estimate,p10_estimate,p25_estimate,p50_estimate,p75_estimate,p90_estimate,p95_estimate,p99_estimate,engine,model_name,handler,method,Description,buckets
+localhost:8000,histogram,http_request_duration_highr_seconds,seconds,66,0.2006,1301.4803,3.9551,19.7194,0.0003,0.0003,0.0003,0.0003,29.4094,29.6599,29.8101,29.8602,29.9003,,,,,Latency with many buckets but no API specific labels. Made for more accurate percentile calculations.,0.01=22;0.025=22;0.05=22;0.075=22;0.1=22;0.25=22;0.5=22;0.75=22;1.0=22;1.5=22;2.0=22;2.5=22;3.0=22;3.5=22;4.0=22;4.5=22;5.0=22;7.5=22;10.0=22;30.0=66;60.0=66;+Inf=66
+localhost:8000,histogram,http_request_duration_seconds,seconds,44,0.1337,1301.4731,3.9551,29.5789,1.5716,3.8579,6.7158,15.2895,29.5789,43.8684,52.4421,55.3000,57.5863,,,/v1/chat/completions,POST,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=0;0.5=0;1.0=0;+Inf=44
+localhost:8000,histogram,http_request_duration_seconds,seconds,22,0.0669,0.0072,0.0000,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,0.0003,,,/v1/models,GET,Latency with only few buckets by handler. Made to be only used if aggregation by handler is important.,0.1=22;0.5=22;1.0=22;+Inf=22
+localhost:8000,histogram,vllm:e2e_request_latency_seconds,seconds,44,0.1337,1301.4042,3.9549,29.5774,29.2527,29.2792,29.3123,29.4117,29.5774,29.7430,29.8424,29.8755,29.9021,0,zai-org/GLM-5.3-Flash,,,Histogram of e2e request latency in seconds.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=0;5.0=0;10.0=0;15.0=0;20.0=0;30.0=44;40.0=44;50.0=44;60.0=44;120.0=44;240.0=44;480.0=44;960.0=44;1920.0=44;7680.0=44;+Inf=44
+localhost:8000,histogram,vllm:inter_token_latency_seconds,seconds,22484,68.3277,1244.9857,3.7834,0.0554,0.0510,0.0511,0.0512,0.0516,0.0550,0.0588,0.0611,0.0619,0.0625,0,zai-org/GLM-5.3-Flash,,,Histogram of inter-token latency in seconds.,0.01=0;0.025=0;0.05=220;0.075=22473;0.1=22484;0.15=22484;0.2=22484;0.3=22484;0.4=22484;0.5=22484;0.75=22484;1.0=22484;2.5=22484;5.0=22484;7.5=22484;10.0=22484;20.0=22484;40.0=22484;80.0=22484;+Inf=22484
+localhost:8000,histogram,vllm:iteration_tokens_total,tokens,5643,17.1488,68112.0000,206.9887,12.0702,2.3909,2.3953,2.5014,3.0448,3.9504,4.8561,5.3995,5.5806,5.7255,0,zai-org/GLM-5.3-Flash,,,Histogram of number of tokens per engine_step.,1.0=0;8.0=5621;16.0=5621;32.0=5621;64.0=5621;128.0=5621;256.0=5621;512.0=5621;1024.0=5621;2048.0=5632;4096.0=5643;8192.0=5643;16384.0=5643;+Inf=5643
+localhost:8000,histogram,vllm:request_decode_time_seconds,seconds,44,0.1337,1244.9857,3.7834,28.2951,28.0202,28.0426,28.0707,28.1549,28.2951,28.4354,28.5196,28.5476,28.5701,0,zai-org/GLM-5.3-Flash,,,Histogram of time spent in DECODE phase for request.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=0;5.0=0;10.0=0;15.0=0;20.0=0;30.0=44;40.0=44;50.0=44;60.0=44;120.0=44;240.0=44;480.0=44;960.0=44;1920.0=44;7680.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_generation_tokens,tokens,44,0.1337,22528.0000,68.4614,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,577.5155,650.8110,675.2428,694.7882,0,zai-org/GLM-5.3-Flash,,,Number of generation tokens processed.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=44;2000.0=44;5000.0=44;10000.0=44;20000.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_inference_time_seconds,seconds,44,0.1337,1285.5973,3.9069,29.2181,28.8917,28.9183,28.9516,29.0516,29.2181,29.3847,29.4846,29.5179,29.5446,0,zai-org/GLM-5.3-Flash,,,Histogram of time spent in RUNNING phase for request.,0.3=0;0.5=0;0.8=0;1.0=0;1.5=0;2.0=0;2.5=0;5.0=0;10.0=0;15.0=0;20.0=0;30.0=44;40.0=44;50.0=44;60.0=44;120.0=44;240.0=44;480.0=44;960.0=44;1920.0=44;7680.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_max_num_generation_tokens,tokens,44,0.1337,22528.0000,68.4614,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,577.5155,650.8110,675.2428,694.7882,0,zai-org/GLM-5.3-Flash,,,Histogram of maximum number of requested generation tokens.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=44;2000.0=44;5000.0=44;10000.0=44;20000.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_num_preemptions,,44,0.1337,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,,,Histogram of the number of times a request was preempted.,1.0=44;2.0=44;3.0=44;4.0=44;5.0=44;10.0=44;20.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_params_max_tokens,tokens,44,0.1337,22528.0000,68.4614,512.0000,500.0000,500.0000,500.0000,500.0000,500.0000,577.5155,650.8110,675.2428,694.7882,0,zai-org/GLM-5.3-Flash,,,Histogram of the max_tokens request parameter.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=44;2000.0=44;5000.0=44;10000.0=44;20000.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_params_n,,44,0.1337,44.0000,0.1337,1.0000,0.4211,0.4602,0.5091,0.6557,0.9000,1.0000,1.0000,1.0000,1.0000,0,zai-org/GLM-5.3-Flash,,,Histogram of the n request parameter.,1.0=44;2.0=44;5.0=44;10.0=44;20.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_prefill_kv_computed_tokens,tokens,44,0.1337,45584.0000,138.5273,1036.0000,1000.0000,1000.0000,1000.0000,1000.0000,1000.0000,1172.7149,1319.3058,1368.1694,1407.2603,0,zai-org/GLM-5.3-Flash,,,Histogram of new KV tokens computed during prefill (excluding cached tokens).,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=0;2000.0=44;5000.0=44;10000.0=44;20000.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_prefill_time_seconds,seconds,44,0.1337,40.6115,0.1234,0.9230,0.5221,0.5795,0.6511,0.8091,0.9115,1.0063,1.2288,1.3056,1.3670,0,zai-org/GLM-5.3-Flash,,,Histogram of time spent in PREFILL phase for request.,0.3=0;0.5=0;0.8=9;1.0=30;1.5=44;2.0=44;2.5=44;5.0=44;10.0=44;15.0=44;20.0=44;30.0=44;40.0=44;50.0=44;60.0=44;120.0=44;240.0=44;480.0=44;960.0=44;1920.0=44;7680.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_prompt_tokens,tokens,44,0.1337,45584.0000,138.5273,1036.0000,1000.0000,1000.0000,1000.0000,1000.0000,1000.0000,1172.7149,1319.3058,1368.1694,1407.2603,0,zai-org/GLM-5.3-Flash,,,Number of prefill tokens processed.,1.0=0;2.0=0;5.0=0;10.0=0;20.0=0;50.0=0;100.0=0;200.0=0;500.0=0;1000.0=0;2000.0=44;5000.0=44;10000.0=44;20000.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_queue_time_seconds,seconds,44,0.1337,0.0004,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0,zai-org/GLM-5.3-Flash,,,Histogram of time spent in WAITING phase for request.,0.3=44;0.5=44;0.8=44;1.0=44;1.5=44;2.0=44;2.5=44;5.0=44;10.0=44;15.0=44;20.0=44;30.0=44;40.0=44;50.0=44;60.0=44;120.0=44;240.0=44;480.0=44;960.0=44;1920.0=44;7680.0=44;+Inf=44
+localhost:8000,histogram,vllm:request_time_per_output_token_seconds,seconds,44,0.1337,2.4364,0.0074,0.0554,0.0519,0.0519,0.0520,0.0520,0.0549,0.0581,0.0600,0.0606,0.0611,0,zai-org/GLM-5.3-Flash,,,Histogram of time_per_output_token_seconds per request.,0.01=0;0.025=0;0.05=0;0.075=44;0.1=44;0.15=44;0.2=44;0.3=44;0.4=44;0.5=44;0.75=44;1.0=44;2.5=44;5.0=44;7.5=44;10.0=44;20.0=44;40.0=44;80.0=44;+Inf=44
+localhost:8000,histogram,vllm:time_to_first_token_seconds,seconds,44,0.1337,56.4269,0.1715,1.2824,1.0825,1.0988,1.1192,1.1804,1.2824,1.3845,1.4457,1.4661,1.4824,0,zai-org/GLM-5.3-Flash,,,Histogram of time to first token in seconds.,0.001=0;0.005=0;0.01=0;0.02=0;0.04=0;0.06=0;0.08=0;0.1=0;0.25=0;0.5=0;0.75=0;1.0=0;2.5=44;5.0=44;7.5=44;10.0=44;20.0=44;40.0=44;80.0=44;160.0=44;640.0=44;2560.0=44;+Inf=44
+
+Endpoint,Metric,Key,Value,Description
+localhost:8000,python_info,implementation,CPython,Python platform information
+localhost:8000,python_info,major,3,Python platform information
+localhost:8000,python_info,minor,12,Python platform information
+localhost:8000,python_info,patchlevel,3,Python platform information
+localhost:8000,python_info,version,3.12.3,Python platform information
+localhost:8000,vllm:cache_config_info,_block_size_resolved,True,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,block_size,8576,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,cache_dtype,fp8,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,enable_mamba_fine_grained_prefix_cache,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,enable_prefix_caching,True,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,engine,0,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,gpu_memory_utilization,0.92,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,is_attention_free,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_dtype_skip_layers,[],Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_layout,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_max_concurrency,30.076923076923077,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_memory_bytes,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_cache_size_tokens,985560,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_offloading_backend,native,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_offloading_size,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,kv_sharing_fast_prefill,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_block_size,8576,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_cache_dtype,auto,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_cache_mode,align,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_page_size_padded,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,mamba_ssm_cache_dtype,auto,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_cpu_blocks,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_gpu_blocks,391,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,num_gpu_blocks_override,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_cache_retention_interval,0,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_caching_hash_algo,sha256,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,prefix_match_unit,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,replayssm_buffer_len,16,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,skip_page_size_padded,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,sliding_window,None,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,use_kda_recoverssm,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,use_replayssm,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,user_specified_block_size,False,Information of the LLMEngine CacheConfig
+localhost:8000,vllm:cache_config_info,user_specified_mamba_block_size,False,Information of the LLMEngine CacheConfig
